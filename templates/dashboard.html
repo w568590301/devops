@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <div>
+        <section class="content">
+          <!-- Info boxes -->
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">机房</span>
+                  <span class="info-box-number" id="idcs_count"> </span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">机柜</span>
+                  <span class="info-box-number" id="racks_count"></span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+
+            <!-- fix for small devices only -->
+            <div class="clearfix visible-sm-block"></div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+
+                <div class="info-box-content">
+                  <span class="info-box-text">服务器</span>
+                  <span class="info-box-number" id="servers_count"></span>
+                </div>
+                <!-- /.info-box-content -->
+              </div>
+              <!-- /.info-box -->
+            </div>
+            <!-- /.col -->
+          </div>
+        </section>
+    </div>
+    <div>
+
+        <div class="col-md-6">
+            <div id="container" style="width: 550px; height: 400px; margin: 0 auto"></div>
+        </div>
+
+        <div class="col-md-6">
+          <p class="text-center">
+            <strong>Capacity</strong>
+          </p>
+            <div id="site" style="overflow:auto; max-height: 350px">
+            </div>
+
+            <!--
+          <div class="progress-group">
+            <span class="progress-text">Add Products to Cart</span>
+            <span class="progress-number"><b>160</b>/200</span>
+
+            <div class="progress sm">
+              <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+            </div>
+          </div>
+
+          -->
+
+          <!-- /.progress-group -->
+        </div>
+
+{#        <div class="box-footer col-md-12">#}
+{#            <div class="row">#}
+{#                <div class="col-sm-3 col-xs-6">#}
+{#                  <div class="description-block border-right">#}
+{#                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>#}
+{#                    <h5 class="description-header">$35,210.43</h5>#}
+{#                    <span class="description-text">TOTAL REVENUE</span>#}
+{#                  </div>#}
+{#                  <!-- /.description-block -->#}
+{#                </div>#}
+{#                <!-- /.col -->#}
+{#                <div class="col-sm-3 col-xs-6">#}
+{#                  <div class="description-block border-right">#}
+{#                    <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>#}
+{#                    <h5 class="description-header">$10,390.90</h5>#}
+{#                    <span class="description-text">TOTAL COST</span>#}
+{#                  </div>#}
+{#              <!-- /.description-block -->#}
+{#            </div>#}
+{#            <!-- /.col -->#}
+{#            <div class="col-sm-3 col-xs-6">#}
+{#              <div class="description-block border-right">#}
+{#                <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>#}
+{#                <h5 class="description-header">$24,813.53</h5>#}
+{#                <span class="description-text">TOTAL PROFIT</span>#}
+{#              </div>#}
+{#              <!-- /.description-block -->#}
+{#            </div>#}
+{#            <!-- /.col -->#}
+{#            <div class="col-sm-3 col-xs-6">#}
+{#              <div class="description-block">#}
+{#                <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>#}
+{#                <h5 class="description-header">1200</h5>#}
+{#                <span class="description-text">GOAL COMPLETIONS</span>#}
+{#              </div>#}
+{#              <!-- /.description-block -->#}
+{#            </div>#}
+{#          </div>#}
+{#        </div>#}
+{##}
+{##}
+{##}
+{#    </div>#}
+
+<script language="JavaScript">
+function bingtu (data) {
+   var chart = {
+       plotBackgroundColor: null,
+       plotBorderWidth: null,
+       plotShadow: false
+   };
+   var title = {
+      text: 'Distribution'
+   };
+   var tooltip = {
+      pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+   };
+   var plotOptions = {
+      pie: {
+         allowPointSelect: true,
+         cursor: 'pointer',
+         dataLabels: {
+            enabled: true,
+            format: '<b>{point.name}%</b>: {point.percentage:.1f} %',
+            style: {
+               color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+            }
+         }
+      }
+   };
+   var series = data;
+   // Make monochrome colors and set them as default for all pies
+   Highcharts.getOptions().plotOptions.pie.colors = (function () {
+      var colors = [];
+      var base = Highcharts.getOptions().colors[0];
+      var i;
+
+      for (i = 0; i < 10; i += 1) {
+         // Start out with a darkened base color (negative brighten), and end
+         // up with a much brighter color
+         colors.push(Highcharts.Color(base).brighten((i - 3) / 7).get());
+      }
+      return colors;
+   }());
+
+   var json = {};
+   json.chart = chart;
+   json.title = title;
+   json.tooltip = tooltip;
+   json.series = series;
+   json.plotOptions = plotOptions;
+   $('#container').highcharts(json);
+};
+
+function getdata() {
+    var url = '/cmdb/api_dashboard/'
+   $.ajax({
+        type: "GET",
+        url: url,
+        data: {},
+        dataType: "json",
+        success: function(data){
+            //逻辑
+            console.log(data)
+            counts = data.counts
+            $('#idcs_count').text(counts.idcs)
+            $('#racks_count').text(counts.racks)
+            $('#servers_count').text(counts.servers)
+
+            html_site = ''
+            data_site = data.data_site
+            for (obj of data_site) {
+                console.log(obj.id)
+
+                html_div = '          <div class="progress-group">\n' +
+                    '            <span class="progress-text">'  +obj.name + '</span>\n' +
+                    '            <span class="progress-number">' + obj.site + '/' +  obj.total_site  + '</span>\n' +
+                    '\n' +
+                    '            <div class="progress sm">\n' +
+                    '              <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>\n' +
+                    '            </div>\n' +
+                    '          </div>'
+               html_site += html_div
+            }
+            $('#site').html(html_site)
+            data_pie = data.data_pie
+            bingtu_data = [{
+              type: 'pie',
+              name: 'Browser share',
+              data: data_pie
+            }]
+            bingtu(bingtu_data)
+
+        },
+
+    })
+
+}
+
+getdata()
+
+
+</script>
+
+
+{% endblock %}

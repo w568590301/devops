@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'cmdb/modal_racks.html' %}
+
+    <div>
+         <ol class="breadcrumb">
+             <li><a href="/cmdb/dashboard/"><i class="fa fa-dashboard"></i> Home</a></li>
+             <li class="active">机柜</li>
+         </ol>
+    </div>
+
+    <div style="margin-bottom: 20px" class="col-md-12">
+        <p></p>
+        <div class="col-md-4">
+            <button id="add" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span>新增</button>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <input id="search" type="text" class="form-control" placeholder="机柜名或编号或U型">
+                <span class="input-group-btn">
+                    <button id="search_btn" class="btn btn-default" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+        <p></p>
+    </div>
+
+    <div>
+        <table id="idctable" class="table table-striped table-bordered table-hover dataTable no-footer">
+            <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>机柜名</th>
+                      <th>服务器数</th>
+                      <th>所属机房</th>
+                      <th>编号</th>
+                      <th>U型</th>
+                      <th>备注</th>
+                      <th>其他1</th>
+                      <th>操作</th>
+                  </tr>
+            </thead>
+            <tbody id='table-content'>
+            {% for obj in paginator_data.object_list %}
+                <tr>
+                    <td><a href="/cmdb/racks/{{ obj.id }}">{{ obj.id }}</a></td>
+                    <td>{{ obj.name }}</td>
+                    <td>
+                        {% if obj.servers.count != 0 %}
+                            <a href="/cmdb/servers/?rack_id={{ obj.id }}">{{ obj.servers.count }}</a>
+                        {% else %}
+                            {{ obj.servers.count }}
+                        {% endif %}
+                    </td>
+                    <td>{{ obj.idc.name }}</td>
+                    <td>{{ obj.number }}</td>
+                    <td>{{ obj.size }}</td>
+                    <td>{{ obj.remark }}</td>
+                    <td>{{ obj.col1 }}</td>
+                    <td>
+                        <button btn-id="{{ obj.id }}" class="btn btn-xs btn-warning edit">编辑</button>
+                        <button btn-id="{{ obj.id }}" class="btn btn-xs btn-danger delete">删除</button>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="yahoo2" style="margin-left:1%">
+        {% if paginator_data.has_previous %}
+            <a class='paginator' href='?page={{ paginator_data.previous_page_number }}&search={{search}}'><span>上一页</span></a>
+        {% endif %}
+
+        {% for page in paginator_data.paginator.page_range %}
+            {% if paginator_data.number == page %}
+                <span id="currentpage">{{ page }}</span>
+            {% else %}
+                <a class='paginator' href='?page={{ page }}&search={{search}}' title='{{ page }}'><span>{{ page }}</span></a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator_data.has_next %}
+            <a class='paginator' href='?page={{ paginator_data.next_page_number }}&search={{search}}'><span>下一页</span></a>
+        {% endif %}
+    </div>
+
+    <script>
+
+        $(document).ready(function() {
+            $.ajax({
+                type: 'get',
+                url: '/cmdb/api_idcs/',
+                data: '',
+                dataType: 'json',
+                success: function(result){
+                    data = result.data
+                    options = ''
+                    for (i=0; i<data.length; i++) {
+                        item = data[i]
+                        option = '<option id="' + item.id +'">' + item.name + '</option>'
+                        options += option
+                    }
+                    $('#create_idc_id').append(options)
+                    $('#create_modal').attr('select_options', options)
+                },
+            })
+        });
+
+        // 点击添加按钮
+        $('#add').click(function(){
+            $('#create_modal').modal()
+        });
+
+        // 发起添加请求
+        $('#create_btn').click(function () {
+            var idc_id = $('#create_idc_id option:selected').attr('id')
+            var name = $('#create_name').val();
+            var number = $('#create_number').val();
+            var size = $('#create_size').val();
+            var remark = $('#create_remark').val();
+            var data = {name:name, idc_id:idc_id, number:number, size:size, remark:remark}
+            $.ajax({
+                type: 'post',
+                url: '/cmdb/racks/',
+                data: data,
+                dataType: 'json',
+                success: function(result){
+                    status = result.status
+                    data = result.data
+                    if (status == 1) {
+                        location.reload()
+                    } else {
+                        alert(data)
+                    }
+                },
+            })
+        });
+
+        {#// 点击修改按钮#}
+        {#$('.edit').click(function () {#}
+        {#    $('#edit_modal').modal();#}
+        {#    //console.log(document.getElementById("create_idc_id").options);#}
+        {#    var id = $.trim($(this).parents("tr").children("td").eq(0).text());#}
+        {#    var name = $.trim($(this).parents("tr").children("td").eq(1).text());#}
+        {#    var idc_name = $.trim($(this).parents("tr").children("td").eq(3).text());#}
+        {#    var number = $.trim($(this).parents("tr").children("td").eq(4).text());#}
+        {#    var size = $.trim($(this).parents("tr").children("td").eq(5).text());#}
+        {#    var remark = $.trim($(this).parents("tr").children("td").eq(6).text());#}
+        {#    $('#edit_id').attr('value', id)#}
+        {#    $('#edit_name').attr('value', name);#}
+        {#    $('#edit_number').attr('value', number);#}
+        {#    $('#edit_size').attr('value', size);#}
+        {#    $('#edit_remark').attr('value', remark);#}
+        {#    idc_options = $('#create_modal').attr('select_options')#}
+        {#    $('#edit_idc_id').empty()#}
+        {#    $('#edit_idc_id').append(idc_options);#}
+        {#    $('#edit_idc_id').attr('value', idc_name);#}
+        {#});#}
+
+        $('.edit').click(function () {
+            $('#edit_modal').modal()
+            id = $(this).attr('btn-id')
+            console.log(id)
+            url = '/cmdb/api_racks/' + id
+            type = 'GET'
+
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: "json",
+                success: function(result){
+                    console.log(result)
+                    $('#edit_id').val(result.data.id)
+                    $('#edit_name').val(result.data.name)
+                    $('#edit_number').val(result.data.number)
+                    $('#edit_size').val(result.data.size)
+                    $('#edit_remark').val(result.data.remark)
+                    $('#edit')
+                    idc_options = $('#create_modal').attr('select_options')
+                    $('#edit_idc_id').empty()
+                    $('#edit_idc_id').append(idc_options);
+                    $('#edit_idc_id').val(result.data.idc.name);
+                }
+            })
+        })
+
+
+
+        // 发起修改请求
+        $('#edit_btn').click(function () {
+            var id = $('#edit_id').val();
+            var name = $('#edit_name').val();
+            var idc_id = $('#edit_idc_id option:selected').attr('id')
+            var number = $('#edit_number').val();
+            var size = $('#edit_size').val();
+            var remark = $('#edit_remark').val();
+            var data = {name:name, idc_id:idc_id, number:number, size:size, remark:remark}
+            $.ajax({
+                type: 'put',
+                url: '/cmdb/racks/' + id + '/',
+                data: data,
+                dataType: 'json',
+                success: function(result){
+                    console.log(result)
+                    status = result.status
+                    data = result.data
+
+                    if (status == 1) {
+                        location.reload()
+                    } else {
+                        alert(data)
+                    }
+                },
+            })
+        });
+
+        // 点击删除按钮，发起删除IDC请求
+        $('.delete').click(function () {
+            var id = $.trim($(this).parents("tr").children("td").eq(0).text());
+            $.ajax({
+                type: 'delete',
+                url: '/cmdb/racks/' + id + '/',
+                data: '',
+                dataType: 'json',
+                success: function(result){
+                    location.reload()
+                },
+            })
+        })
+
+        // 点击搜索按钮
+        $('#search_btn').click(function () {
+            var search = $('#search').val()
+            window.location.href = "/cmdb/racks/?search=" + search
+        })
+
+    </script>
+
+{% endblock %}

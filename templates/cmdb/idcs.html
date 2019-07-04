@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+{% block content %}
+{% include 'cmdb/modal_idcs.html' %}
+
+     <div>
+         <ol class="breadcrumb">
+             <li><a href="/cmdb/dashboard/"><i class="fa fa-dashboard"></i> Home</a></li>
+             <li class="active">机房</li>
+         </ol>
+    </div>
+
+    <div style="margin-bottom: 20px" class="col-md-12">
+        <p></p>
+        <div class="col-md-4">
+            <button id="add" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span>新增</button>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <input id="search" type="text" class="form-control" placeholder="机房名或地址">
+                <span class="input-group-btn">
+                    <button id="search_btn" class="btn btn-default" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+        <p></p>
+    </div>
+
+    <div style="margin-top: 10px">
+        <table id="idctable" class="table table-striped table-bordered table-hover dataTable no-footer">
+            <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>机房名</th>
+                      <th>机柜数</th>
+                      <th>机房地址</th>
+                      <th>机房类型</th>
+                      <th>机房座机</th>
+                      <th>操作</th>
+                  </tr>
+            </thead>
+            <tbody id='table-content'>
+            {% for obj in paginator_data.object_list %}
+                <tr>
+                    <td><a href="/cmdb/idcs/{{ obj.id }}">{{ obj.id }}</a></td>
+                    <td>{{ obj.name }}</td>
+                    <td>
+                        {% if obj.racks.count != 0 %}
+                            <a href="/cmdb/racks/?idc_id={{ obj.id }}">{{ obj.racks.count }}</a>
+                        {% else %}
+                            {{ obj.racks.count }}
+                        {% endif %}
+                    </td>
+                    <td>{{ obj.address }}</td>
+                    <td>{{ obj.remark }}</td>
+                    <td>{{ obj.phone }}</td>
+                    <td>
+                        <button class="btn btn-xs btn-warning edit">编辑</button>
+                        <button class="btn btn-xs btn-danger delete">删除</button>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="yahoo2" style="margin-left:1%">
+        {% if paginator_data.has_previous %}
+            <a class='paginator' href='?page={{ paginator_data.previous_page_number }}&search={{search}}'><span>上一页</span></a>
+        {% endif %}
+
+        {% for page in paginator_data.paginator.page_range %}
+            {% if paginator_data.number == page %}
+                <span id="currentpage">{{ page }}</span>
+            {% else %}
+                <a class='paginator' href='?page={{ page }}&search={{search}}' title='{{ page }}'><span>{{ page }}</span></a>
+            {% endif %}
+        {% endfor %}
+
+        {% if paginator_data.has_next %}
+            <a class='paginator' href='?page={{ paginator_data.next_page_number }}&search={{search}}'><span>下一页</span></a>
+        {% endif %}
+    </div>
+
+    <script>
+
+        // 点击添加按钮
+        $('#add').click(function(){
+            $('#create_modal').modal()
+        });
+
+        // 发起添加IDC请求
+        $('#create_btn').click(function () {
+            var name = $('#create_name').val();
+            var address = $('#create_address').val();
+            var remark = $('#create_remark').val();
+            var data = {name:name, address:address, remark:remark}
+            $.ajax({
+                type: 'post',
+                url: '/cmdb/idcs/',
+                data: data,
+                dataType: 'json',
+                success: function(result){
+                    status = result.status
+                    data = result.data
+                    if (status == 1) {
+                        location.reload()
+                    } else {
+                        alert(data)
+                    }
+                },
+            })
+        });
+
+        // 点击修改按钮
+        $('.edit').click(function () {
+            $('#edit_modal').modal();
+            var id = $.trim($(this).parents("tr").children("td").eq(0).text());
+            var name = $.trim($(this).parents("tr").children("td").eq(1).text());
+            var address = $.trim($(this).parents("tr").children("td").eq(3).text());
+            var remark = $.trim($(this).parents("tr").children("td").eq(4).text());
+            var phone = $.trim($(this).parents("tr").children("td").eq(5).text());
+            {#console.log(phone)#}
+            $('#edit_id').attr('value', id)
+            $('#edit_name').attr('value', name);
+            $('#edit_address').attr('value', address);
+            $('#edit_remark').attr('value', remark);
+            $('#edit_phone').attr('value', phone);
+        });
+
+        // 发起修改IDC请求
+        $('#edit_btn').click(function () {
+            var id = $('#edit_id').val()
+            var name = $('#edit_name').val()
+            var address = $('#edit_address').val()
+            var remark = $('#edit_remark').val()
+            var phone = $('#edit_phone').val()
+            var data = {name:name, address:address, remark:remark,phone:phone}
+            $.ajax({
+                type: 'put',
+                url: '/cmdb/idcs/' + id + '/',
+                data: data,
+                dataType: 'json',
+                success: function(result){
+                    status = result.status
+                    {#console.log(status)#}
+                    data = result.data
+                    if (status == 1) {
+                        location.reload()
+                    } else {
+                        alert(data)
+                    }
+                },
+            })
+        })
+
+        // 点击删除按钮，发起删除IDC请求
+        $('.delete').click(function () {
+            var id = $.trim($(this).parents("tr").children("td").eq(0).text());
+            $.ajax({
+                type: 'delete',
+                url: '/cmdb/idcs/' + id + '/',
+                data: '',
+                dataType: 'json',
+                success: function(result){
+                    location.reload()
+                },
+            })
+        })
+
+        // 点击搜索按钮
+        $('#search_btn').click(function () {
+            var search = $('#search').val()
+            window.location.href = "/cmdb/idcs/?search=" + search
+        })
+
+    </script>
+
+{% endblock %}

@@ -1,0 +1,1033 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 11:24:05 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+writing pidfile to /tmp/ops/script/uwsgi.pid
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0x240abe0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x240abe0 pid: 15665 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15665)
+spawned uWSGI worker 1 (pid: 15667, cores: 1)
+spawned uWSGI worker 2 (pid: 15668, cores: 1)
+spawned uWSGI worker 3 (pid: 15669, cores: 1)
+spawned uWSGI worker 4 (pid: 15670, cores: 1)
+spawned uWSGI worker 5 (pid: 15671, cores: 1)
+spawned uWSGI http 1 (pid: 15672)
+[pid: 15667|app: 0|req: 1/1] 172.16.20.9 () {38 vars in 793 bytes} [Mon Jul  1 03:24:33 2019] GET / => generated 4361 bytes in 113 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15668|app: -1|req: -1/2] 172.16.20.9 () {38 vars in 755 bytes} [Mon Jul  1 03:24:33 2019] GET /static/css/bootstrap.min.css => generated 121260 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 0)
+[pid: 15670|app: -1|req: -1/3] 172.16.20.9 () {38 vars in 761 bytes} [Mon Jul  1 03:24:33 2019] GET /static/css/font-awesome.min.css => generated 27466 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 15671|app: -1|req: -1/4] 172.16.20.9 () {38 vars in 753 bytes} [Mon Jul  1 03:24:33 2019] GET /static/css/ionicons.min.css => generated 51284 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 15669|app: -1|req: -1/5] 172.16.20.9 () {38 vars in 753 bytes} [Mon Jul  1 03:24:33 2019] GET /static/css/AdminLTE.min.css => generated 90217 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 15667|app: -1|req: -1/6] 172.16.20.9 () {38 vars in 755 bytes} [Mon Jul  1 03:24:33 2019] GET /static/css/skin-blue.min.css => generated 3037 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 15668|app: -1|req: -1/7] 172.16.20.9 () {38 vars in 730 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/jquery.min.js => generated 94840 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 15670|app: -1|req: -1/8] 172.16.20.9 () {38 vars in 736 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/bootstrap.min.js => generated 27731 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 15671|app: -1|req: -1/9] 172.16.20.9 () {38 vars in 728 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/fastclick.js => generated 25965 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 15669|app: -1|req: -1/10] 172.16.20.9 () {38 vars in 724 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/app.min.js => generated 9774 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 118 bytes (0 switches on core 0)
+[pid: 15667|app: -1|req: -1/11] 172.16.20.9 () {38 vars in 750 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/jquery.sparkline.min.js => generated 43247 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15668|app: -1|req: -1/12] 172.16.20.9 () {38 vars in 764 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 33323 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 15670|app: -1|req: -1/13] 172.16.20.9 () {38 vars in 772 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 144313 bytes in 7 msecs via sendfile() (HTTP/1.1 200) 3 headers in 120 bytes (2 switches on core 0)
+[pid: 15671|app: -1|req: -1/14] 172.16.20.9 () {38 vars in 752 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/jquery.slimscroll.min.js => generated 4724 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 118 bytes (1 switches on core 0)
+[pid: 15669|app: -1|req: -1/15] 172.16.20.9 () {38 vars in 728 bytes} [Mon Jul  1 03:24:33 2019] GET /static/js/Chart.min.js => generated 57275 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 15667|app: -1|req: -1/16] 172.16.20.9 () {38 vars in 718 bytes} [Mon Jul  1 03:24:35 2019] GET /static/js/demo.js => generated 17319 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 15668|app: -1|req: -1/17] 172.16.20.9 () {38 vars in 730 bytes} [Mon Jul  1 03:24:35 2019] GET /static/js/highcharts.js => generated 233364 bytes in 25 msecs via sendfile() (HTTP/1.1 200) 3 headers in 120 bytes (3 switches on core 0)
+[pid: 15671|app: -1|req: -1/18] 172.16.20.9 () {40 vars in 845 bytes} [Mon Jul  1 03:24:35 2019] GET /static/fonts/fontawesome-webfont.woff2?v=4.5.0 => generated 64464 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 1/19] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 03:24:35 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 76 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+[pid: 15667|app: -1|req: -1/20] 172.16.20.9 () {40 vars in 815 bytes} [Mon Jul  1 03:24:35 2019] GET /static/fonts/ionicons.ttf?v=2.0.0 => generated 8238 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 15668|app: -1|req: -1/21] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:24:35 2019] GET /static/fonts/ionicons.woff?v=2.0.0 => generated 8244 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+[pid: 15669|app: 0|req: 1/22] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 03:24:35 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 95 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15671|app: 0|req: 1/23] 172.16.20.9 () {38 vars in 742 bytes} [Mon Jul  1 03:24:35 2019] GET /favicon.ico => generated 2394 bytes in 91 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 2/24] 172.16.20.9 () {40 vars in 824 bytes} [Mon Jul  1 03:24:44 2019] GET / => generated 4361 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 2/25] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 03:24:44 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 1/26] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 03:24:44 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 98 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 2/27] 172.16.20.9 () {40 vars in 824 bytes} [Mon Jul  1 03:24:45 2019] GET / => generated 4361 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 2/28] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 03:24:45 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 3/29] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 03:24:45 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 3/30] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:24:46 2019] GET /cmdb/racks/ => generated 15218 bytes in 63 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15668|app: -1|req: -1/31] 172.16.20.9 () {40 vars in 845 bytes} [Mon Jul  1 03:24:46 2019] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 15669|app: 0|req: 3/32] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:24:46 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 3/33] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:24:47 2019] GET /cmdb/servers/ => generated 29883 bytes in 238 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 4/34] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:24:47 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 4/35] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:24:53 2019] GET /cmdb/api_servers/18 => generated 9135 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 2/36] 172.16.20.9 () {46 vars in 935 bytes} [Mon Jul  1 03:24:56 2019] PUT /cmdb/servers/18/ => generated 15 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 4/37] 172.16.20.9 () {42 vars in 904 bytes} [Mon Jul  1 03:24:56 2019] GET /cmdb/servers/ => generated 29883 bytes in 210 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 4/38] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:24:57 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 5/39] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:25:13 2019] GET /cmdb/api_servers/18 => generated 9135 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 5/40] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:26:33 2019] GET /cmdb/racks/ => generated 15218 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 3/41] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:26:33 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 5/42] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:26:33 2019] GET /cmdb/servers/ => generated 29883 bytes in 206 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 5/43] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:26:33 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 6/44] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 03:26:33 2019] GET /cmdb/idcs/ => generated 12357 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 6/45] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:26:36 2019] GET /cmdb/racks/ => generated 15218 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 4/46] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:26:37 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 6/47] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:26:37 2019] GET /cmdb/servers/ => generated 29883 bytes in 204 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 6/48] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:26:37 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 7/49] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:26:40 2019] GET /cmdb/racks/ => generated 15218 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 7/50] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:26:40 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 5/51] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 03:26:40 2019] GET /cmdb/idcs/ => generated 12357 bytes in 68 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 7/52] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:26:43 2019] GET /cmdb/racks/ => generated 15218 bytes in 59 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 7/53] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:26:43 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 8/54] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:26:43 2019] GET /cmdb/servers/ => generated 29883 bytes in 209 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 8/55] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:26:43 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 6/56] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:26:47 2019] GET /cmdb/racks/ => generated 15218 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 8/57] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:26:47 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 8/58] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:26:47 2019] GET /cmdb/servers/ => generated 29883 bytes in 206 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 9/59] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:26:47 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 9/60] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:26:47 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 7/61] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:26:48 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 9/62] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 03:26:48 2019] GET /cmdb/idcs/ => generated 12357 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 9/63] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:27:03 2019] GET /cmdb/servers/ => generated 29883 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 10/64] 172.16.20.9 () {40 vars in 807 bytes} [Mon Jul  1 03:27:03 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 10/65] 172.16.20.9 () {42 vars in 890 bytes} [Mon Jul  1 03:27:59 2019] GET /cmdb/servers/ => generated 29883 bytes in 207 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 8/66] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 03:28:00 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 10/67] 172.16.20.9 () {42 vars in 890 bytes} [Mon Jul  1 03:28:02 2019] GET /cmdb/servers/ => generated 29883 bytes in 218 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 10/68] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 03:28:03 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 11/69] 172.16.20.9 () {40 vars in 823 bytes} [Mon Jul  1 03:28:04 2019] GET / => generated 4361 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 11/70] 172.16.20.9 () {40 vars in 863 bytes} [Mon Jul  1 03:28:04 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 9/71] 172.16.20.9 () {40 vars in 818 bytes} [Mon Jul  1 03:28:04 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 11/72] 172.16.20.9 () {40 vars in 859 bytes} [Mon Jul  1 03:28:05 2019] GET /cmdb/servers/ => generated 29883 bytes in 210 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 11/73] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 03:28:06 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 12/74] 172.16.20.9 () {40 vars in 895 bytes} [Mon Jul  1 03:28:16 2019] GET /cmdb/servers/?search=Cent => generated 20402 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 12/75] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:28:16 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 10/76] 172.16.20.9 () {40 vars in 900 bytes} [Mon Jul  1 03:29:38 2019] GET /cmdb/servers/?search= => generated 29883 bytes in 213 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 12/77] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:29:39 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 12/78] 172.16.20.9 () {40 vars in 902 bytes} [Mon Jul  1 03:29:45 2019] GET /cmdb/servers/?search=K8S => generated 20402 bytes in 35 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 13/79] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:29:45 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 13/80] 172.16.20.9 () {38 vars in 793 bytes} [Mon Jul  1 03:33:59 2019] GET / => generated 4361 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 11/81] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 03:33:59 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 13/82] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 03:34:00 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 13/83] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:34:02 2019] GET /cmdb/servers/ => generated 29883 bytes in 210 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 14/84] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:34:03 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 14/85] 172.16.20.9 () {40 vars in 894 bytes} [Mon Jul  1 03:34:07 2019] GET /cmdb/servers/?search=k8s => generated 20402 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15668|app: 0|req: 12/86] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:34:07 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15669|app: 0|req: 14/87] 172.16.20.9 () {40 vars in 905 bytes} [Mon Jul  1 03:34:11 2019] GET /cmdb/servers/?search=k8s => generated 20402 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15671|app: 0|req: 14/88] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:34:11 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15670|app: 0|req: 15/89] 172.16.20.9 () {40 vars in 905 bytes} [Mon Jul  1 03:34:21 2019] GET /cmdb/servers/?search=K8S => generated 20402 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15667|app: 0|req: 15/90] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:34:21 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 15672)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /tmp/ops/ops.sock removed.
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 11:35:07 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+writing pidfile to /tmp/ops/script/uwsgi.pid
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0xe96be0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xe96be0 pid: 15753 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15753)
+spawned uWSGI worker 1 (pid: 15755, cores: 1)
+spawned uWSGI worker 2 (pid: 15756, cores: 1)
+spawned uWSGI worker 3 (pid: 15757, cores: 1)
+spawned uWSGI worker 4 (pid: 15758, cores: 1)
+spawned uWSGI worker 5 (pid: 15759, cores: 1)
+spawned uWSGI http 1 (pid: 15760)
+gateway "uWSGI http 1" has been buried (pid: 15760)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 15755)...
+Gracefully killing worker 3 (pid: 15757)...
+Gracefully killing worker 2 (pid: 15756)...
+Gracefully killing worker 4 (pid: 15758)...
+Gracefully killing worker 5 (pid: 15759)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /tmp/ops/script
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/tmp/ops/ops.sock)
+running /usr/local/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /tmp/ops/static
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 03:35:18 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 inherited UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0x21baa00
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x21baa00 pid: 15753 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15753)
+spawned uWSGI worker 1 (pid: 15765, cores: 1)
+spawned uWSGI worker 2 (pid: 15766, cores: 1)
+spawned uWSGI worker 3 (pid: 15767, cores: 1)
+spawned uWSGI worker 4 (pid: 15768, cores: 1)
+spawned uWSGI worker 5 (pid: 15769, cores: 1)
+spawned uWSGI http 1 (pid: 15770)
+[pid: 15765|app: 0|req: 1/1] 172.16.20.9 () {42 vars in 936 bytes} [Mon Jul  1 03:35:21 2019] GET /cmdb/servers/?search=K8S => generated 23274 bytes in 180 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+[pid: 15767|app: 0|req: 1/2] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:35:21 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 90 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 1/3] 172.16.20.9 () {40 vars in 905 bytes} [Mon Jul  1 03:35:26 2019] GET /cmdb/servers/?search=k8s => generated 20402 bytes in 121 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 1/4] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:35:26 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 91 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 1/5] 172.16.20.9 () {40 vars in 899 bytes} [Mon Jul  1 03:35:28 2019] GET /cmdb/servers/?search= => generated 29883 bytes in 295 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 2/6] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:35:28 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 2/7] 172.16.20.9 () {40 vars in 902 bytes} [Mon Jul  1 03:35:34 2019] GET /cmdb/servers/?search=K8S => generated 23274 bytes in 116 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 2/8] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 03:35:34 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 2/9] 172.16.20.9 () {40 vars in 935 bytes} [Mon Jul  1 03:35:56 2019] GET /cmdb/servers/?search=%E9%95%9C%E5%83%8F => generated 21363 bytes in 85 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 2/10] 172.16.20.9 () {40 vars in 835 bytes} [Mon Jul  1 03:35:56 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 3/11] 172.16.20.9 () {40 vars in 926 bytes} [Mon Jul  1 03:36:24 2019] GET /cmdb/servers/?search=Centos => generated 20402 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 3/12] 172.16.20.9 () {40 vars in 823 bytes} [Mon Jul  1 03:36:24 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 3/13] 172.16.20.9 () {40 vars in 902 bytes} [Mon Jul  1 03:36:26 2019] GET /cmdb/servers/?search= => generated 29883 bytes in 212 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 3/14] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:36:26 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 3/15] 172.16.20.9 () {40 vars in 908 bytes} [Mon Jul  1 03:36:30 2019] GET /cmdb/servers/?search=CentOS => generated 28929 bytes in 191 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 4/16] 172.16.20.9 () {40 vars in 823 bytes} [Mon Jul  1 03:36:31 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 4/17] 172.16.20.9 () {40 vars in 914 bytes} [Mon Jul  1 03:36:46 2019] GET /cmdb/servers/?search=CentOS => generated 28929 bytes in 193 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 4/18] 172.16.20.9 () {40 vars in 823 bytes} [Mon Jul  1 03:36:47 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 4/19] 172.16.20.9 () {40 vars in 914 bytes} [Mon Jul  1 03:36:59 2019] GET /cmdb/servers/?search=cognos => generated 21333 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 4/20] 172.16.20.9 () {40 vars in 823 bytes} [Mon Jul  1 03:36:59 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 5/21] 172.16.20.9 () {40 vars in 902 bytes} [Mon Jul  1 03:37:01 2019] GET /cmdb/servers/?search= => generated 29883 bytes in 209 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 5/22] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:37:01 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 5/23] 172.16.20.9 () {40 vars in 825 bytes} [Mon Jul  1 03:37:04 2019] GET /cmdb/api_servers/18 => generated 9135 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 5/24] 172.16.20.9 () {40 vars in 823 bytes} [Mon Jul  1 03:37:13 2019] GET /cmdb/api_servers/8 => generated 9227 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 5/25] 172.16.20.9 () {40 vars in 825 bytes} [Mon Jul  1 03:37:17 2019] GET /cmdb/api_servers/13 => generated 9058 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 6/26] 172.16.20.9 () {40 vars in 825 bytes} [Mon Jul  1 03:37:25 2019] GET /cmdb/api_servers/11 => generated 9178 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 6/27] 172.16.20.9 () {40 vars in 896 bytes} [Mon Jul  1 03:37:38 2019] GET /cmdb/servers/?search= => generated 29883 bytes in 207 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 6/28] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 03:37:39 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Mon Jul  1 03:37:39 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /cmdb/servers/?search= (ip 172.16.20.9) !!!
+Mon Jul  1 03:37:39 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /cmdb/servers/?search= (172.16.20.9)
+OSError: write error
+[pid: 15766|app: 0|req: 6/29] 172.16.20.9 () {40 vars in 896 bytes} [Mon Jul  1 03:37:39 2019] GET /cmdb/servers/?search= => generated 0 bytes in 203 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Mon Jul  1 03:37:40 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /cmdb/servers/?search= (ip 172.16.20.9) !!!
+Mon Jul  1 03:37:40 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /cmdb/servers/?search= (172.16.20.9)
+OSError: write error
+[pid: 15769|app: 0|req: 6/30] 172.16.20.9 () {40 vars in 896 bytes} [Mon Jul  1 03:37:39 2019] GET /cmdb/servers/?search= => generated 0 bytes in 202 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+Mon Jul  1 03:37:40 2019 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request /cmdb/servers/?search= (ip 172.16.20.9) !!!
+Mon Jul  1 03:37:40 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /cmdb/servers/?search= (172.16.20.9)
+OSError: write error
+[pid: 15765|app: 0|req: 7/31] 172.16.20.9 () {40 vars in 896 bytes} [Mon Jul  1 03:37:40 2019] GET /cmdb/servers/?search= => generated 0 bytes in 190 msecs (HTTP/1.1 200) 4 headers in 0 bytes (0 switches on core 0)
+[pid: 15767|app: 0|req: 7/32] 172.16.20.9 () {40 vars in 896 bytes} [Mon Jul  1 03:37:40 2019] GET /cmdb/servers/?search= => generated 29883 bytes in 183 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 7/33] 172.16.20.9 () {40 vars in 815 bytes} [Mon Jul  1 03:37:40 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 7/34] 172.16.20.9 () {40 vars in 900 bytes} [Mon Jul  1 03:37:43 2019] GET /cmdb/servers/?search=K8S => generated 23274 bytes in 85 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 7/35] 172.16.20.9 () {40 vars in 818 bytes} [Mon Jul  1 03:37:43 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 8/36] 172.16.20.9 () {40 vars in 910 bytes} [Mon Jul  1 03:37:56 2019] GET /cmdb/servers/?search=CentOS => generated 28929 bytes in 189 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 8/37] 172.16.20.9 () {40 vars in 822 bytes} [Mon Jul  1 03:37:56 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 8/38] 172.16.20.9 () {40 vars in 919 bytes} [Mon Jul  1 03:38:03 2019] GET /cmdb/servers/?search=172.16.20 => generated 29883 bytes in 208 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 8/39] 172.16.20.9 () {40 vars in 825 bytes} [Mon Jul  1 03:38:03 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 8/40] 172.16.20.9 () {40 vars in 908 bytes} [Mon Jul  1 03:38:12 2019] GET /cmdb/servers/?search=22 => generated 21353 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 9/41] 172.16.20.9 () {40 vars in 818 bytes} [Mon Jul  1 03:38:12 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 9/42] 172.16.20.9 () {40 vars in 897 bytes} [Mon Jul  1 03:38:14 2019] GET /cmdb/servers/?search= => generated 29883 bytes in 197 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 9/43] 172.16.20.9 () {40 vars in 816 bytes} [Mon Jul  1 03:38:14 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 15766|app: 0|req: 9/44] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 03:38:17 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 9/45] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 03:38:17 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 10/46] 172.16.20.9 () {40 vars in 889 bytes} [Mon Jul  1 03:38:20 2019] GET /cmdb/servers/?rack_id=5 => generated 29883 bytes in 202 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 10/47] 172.16.20.9 () {40 vars in 818 bytes} [Mon Jul  1 03:38:20 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 10/48] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 03:38:21 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 10/49] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 03:38:22 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 10/50] 172.16.20.9 () {40 vars in 868 bytes} [Mon Jul  1 03:38:22 2019] GET /cmdb/racks/5 => generated 7423 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 11/51] 172.16.20.9 () {40 vars in 824 bytes} [Mon Jul  1 03:43:18 2019] GET / => generated 4361 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 11/52] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 03:43:18 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 11/53] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 03:43:18 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 11/54] 172.16.20.9 () {40 vars in 824 bytes} [Mon Jul  1 03:43:25 2019] GET / => generated 4361 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 11/55] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 03:43:25 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 12/56] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 03:43:25 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 12/57] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:43:26 2019] GET /cmdb/servers/ => generated 29883 bytes in 202 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+[pid: 15768|app: 0|req: 12/58] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:43:27 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 12/59] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 03:43:28 2019] GET /cmdb/idcs/ => generated 12357 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 12/60] 172.16.20.9 () {42 vars in 885 bytes} [Mon Jul  1 03:44:50 2019] GET /cmdb/idcs/ => generated 12357 bytes in 47 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 13/61] 172.16.20.9 () {40 vars in 868 bytes} [Mon Jul  1 03:44:51 2019] GET /cmdb/idcs/15 => generated 8860 bytes in 33 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15767|app: 0|req: 13/62] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:44:52 2019] GET /cmdb/servers/ => generated 29883 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15768|app: 0|req: 13/63] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 03:44:53 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15766|app: 0|req: 13/64] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 03:45:00 2019] GET /cmdb/idcs/ => generated 12357 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15769|app: 0|req: 13/65] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:45:00 2019] GET /cmdb/racks/ => generated 15218 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 15765|app: 0|req: 14/66] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:45:00 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15767|app: 0|req: 14/67] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 03:59:31 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15768|app: -1|req: -1/68] 172.16.20.9 () {34 vars in 689 bytes} [Mon Jul  1 03:59:31 2019] GET /static/css/bootstrap.min.css.map => generated 54416 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 15770)
+...gracefully killing workers...
+Gracefully killing worker 4 (pid: 15768)...
+Gracefully killing worker 1 (pid: 15765)...
+Gracefully killing worker 2 (pid: 15766)...
+Gracefully killing worker 5 (pid: 15769)...
+Gracefully killing worker 3 (pid: 15767)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /tmp/ops/script
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/tmp/ops/ops.sock)
+running /usr/local/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /tmp/ops/static
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 03:59:36 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 inherited UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0x1aa3a00
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1aa3a00 pid: 15753 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15753)
+spawned uWSGI worker 1 (pid: 15819, cores: 1)
+spawned uWSGI worker 2 (pid: 15820, cores: 1)
+spawned uWSGI worker 3 (pid: 15821, cores: 1)
+spawned uWSGI worker 4 (pid: 15822, cores: 1)
+spawned uWSGI worker 5 (pid: 15823, cores: 1)
+spawned uWSGI http 1 (pid: 15824)
+[pid: 15819|app: 0|req: 1/1] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:59:38 2019] GET /cmdb/racks/ => generated 15218 bytes in 146 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15821|app: 0|req: 1/2] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 03:59:38 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 49 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15822|app: 0|req: 1/3] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:59:38 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 77 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15820|app: 0|req: 1/4] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 03:59:41 2019] GET /cmdb/racks/ => generated 15218 bytes in 140 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15823|app: 0|req: 1/5] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 03:59:42 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 50 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15819|app: 0|req: 2/6] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:59:42 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 15821|app: 0|req: 2/7] 172.16.20.9 () {42 vars in 887 bytes} [Mon Jul  1 03:59:44 2019] GET /cmdb/racks/ => generated 15218 bytes in 111 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15822|app: 0|req: 2/8] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 03:59:45 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15820|app: 0|req: 2/9] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 03:59:45 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15823|app: 0|req: 2/10] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 03:59:53 2019] GET /cmdb/servers/ => generated 29921 bytes in 258 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15819|app: 0|req: 3/11] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 03:59:53 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15821|app: 0|req: 3/12] 172.16.20.9 () {40 vars in 807 bytes} [Mon Jul  1 03:59:53 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15822|app: 0|req: 3/13] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 04:00:37 2019] GET /cmdb/racks/ => generated 15218 bytes in 85 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15820|app: 0|req: 3/14] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:00:38 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15823|app: 0|req: 3/15] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 04:00:38 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15819|app: 0|req: 4/16] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 04:00:38 2019] GET /cmdb/servers/ => generated 29921 bytes in 204 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15821|app: 0|req: 4/17] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:00:38 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 15822|app: 0|req: 4/18] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 04:00:38 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15820|app: 0|req: 4/19] 172.16.20.9 () {40 vars in 896 bytes} [Mon Jul  1 04:00:47 2019] GET /cmdb/servers/?search=wiki => generated 20440 bytes in 36 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15823|app: 0|req: 4/20] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:00:47 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15819|app: 0|req: 5/21] 172.16.20.9 () {40 vars in 821 bytes} [Mon Jul  1 04:00:47 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15821|app: 0|req: 5/22] 172.16.20.9 () {40 vars in 900 bytes} [Mon Jul  1 04:00:51 2019] GET /cmdb/servers/?search= => generated 29921 bytes in 204 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15822|app: 0|req: 5/23] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:00:52 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15820|app: 0|req: 5/24] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 04:00:52 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 15824)
+...gracefully killing workers...
+Gracefully killing worker 3 (pid: 15821)...
+Gracefully killing worker 1 (pid: 15819)...
+Gracefully killing worker 4 (pid: 15822)...
+Gracefully killing worker 2 (pid: 15820)...
+Gracefully killing worker 5 (pid: 15823)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /tmp/ops/script
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/tmp/ops/ops.sock)
+running /usr/local/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /tmp/ops/static
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 04:02:34 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 inherited UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0x24d5a00
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x24d5a00 pid: 15753 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15753)
+spawned uWSGI worker 1 (pid: 15847, cores: 1)
+spawned uWSGI worker 2 (pid: 15848, cores: 1)
+spawned uWSGI worker 3 (pid: 15849, cores: 1)
+spawned uWSGI worker 4 (pid: 15850, cores: 1)
+spawned uWSGI worker 5 (pid: 15851, cores: 1)
+spawned uWSGI http 1 (pid: 15852)
+[pid: 15847|app: 0|req: 1/1] 172.16.20.9 () {42 vars in 931 bytes} [Mon Jul  1 04:02:35 2019] GET /cmdb/servers/?search= => generated 29921 bytes in 295 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15849|app: 0|req: 1/2] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:02:35 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 51 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15850|app: 0|req: 1/3] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 04:02:35 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 95 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15848|app: 0|req: 1/4] 172.16.20.9 () {40 vars in 906 bytes} [Mon Jul  1 04:02:40 2019] GET /cmdb/servers/?search=vmware => generated 25215 bytes in 212 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15851|app: 0|req: 1/5] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 04:02:41 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 52 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15847|app: 0|req: 2/6] 172.16.20.9 () {40 vars in 822 bytes} [Mon Jul  1 04:02:41 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 15852)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 15847)...
+Gracefully killing worker 2 (pid: 15848)...
+Gracefully killing worker 5 (pid: 15851)...
+Gracefully killing worker 3 (pid: 15849)...
+Gracefully killing worker 4 (pid: 15850)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /tmp/ops/script
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/tmp/ops/ops.sock)
+running /usr/local/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /tmp/ops/static
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 04:03:39 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 inherited UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0x1ed9a00
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1ed9a00 pid: 15753 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15753)
+spawned uWSGI worker 1 (pid: 15856, cores: 1)
+spawned uWSGI worker 2 (pid: 15857, cores: 1)
+spawned uWSGI worker 3 (pid: 15858, cores: 1)
+spawned uWSGI worker 4 (pid: 15859, cores: 1)
+spawned uWSGI worker 5 (pid: 15860, cores: 1)
+spawned uWSGI http 1 (pid: 15861)
+[pid: 15856|app: 0|req: 1/1] 172.16.20.9 () {40 vars in 908 bytes} [Mon Jul  1 04:03:42 2019] GET /cmdb/servers/?search=k8s => generated 23312 bytes in 181 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15858|app: 0|req: 1/2] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:03:42 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 51 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15859|app: 0|req: 1/3] 172.16.20.9 () {40 vars in 820 bytes} [Mon Jul  1 04:03:42 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 93 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15857|app: 0|req: 1/4] 172.16.20.9 () {40 vars in 907 bytes} [Mon Jul  1 04:04:11 2019] GET /cmdb/servers/?search=node => generated 22346 bytes in 168 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15860|app: 0|req: 1/5] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:04:11 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 52 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15856|app: 0|req: 2/6] 172.16.20.9 () {40 vars in 821 bytes} [Mon Jul  1 04:04:11 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 15861)
+...gracefully killing workers...
+Gracefully killing worker 2 (pid: 15857)...
+Gracefully killing worker 1 (pid: 15856)...
+Gracefully killing worker 3 (pid: 15858)...
+Gracefully killing worker 4 (pid: 15859)...
+Gracefully killing worker 5 (pid: 15860)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /tmp/ops/script
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/tmp/ops/ops.sock)
+running /usr/local/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /tmp/ops/static
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 04:05:11 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 inherited UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0xf9ca00
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xf9ca00 pid: 15753 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15753)
+spawned uWSGI worker 1 (pid: 15867, cores: 1)
+spawned uWSGI worker 2 (pid: 15868, cores: 1)
+spawned uWSGI worker 3 (pid: 15869, cores: 1)
+spawned uWSGI worker 4 (pid: 15870, cores: 1)
+spawned uWSGI worker 5 (pid: 15871, cores: 1)
+spawned uWSGI http 1 (pid: 15872)
+[pid: 15867|app: 0|req: 1/1] 172.16.20.9 () {42 vars in 938 bytes} [Mon Jul  1 04:05:12 2019] GET /cmdb/servers/?search=node => generated 22355 bytes in 149 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 1/2] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:05:12 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 54 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 1/3] 172.16.20.9 () {40 vars in 821 bytes} [Mon Jul  1 04:05:12 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 93 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 1/4] 172.16.20.9 () {40 vars in 912 bytes} [Mon Jul  1 04:05:18 2019] GET /cmdb/servers/?search=vmware => generated 25224 bytes in 216 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 1/5] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:05:18 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 53 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 2/6] 172.16.20.9 () {40 vars in 823 bytes} [Mon Jul  1 04:05:18 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 2/7] 172.16.20.9 () {40 vars in 902 bytes} [Mon Jul  1 04:05:23 2019] GET /cmdb/servers/?search= => generated 29930 bytes in 257 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 2/8] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:05:23 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 2/9] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 04:05:23 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 2/10] 172.16.20.9 () {40 vars in 906 bytes} [Mon Jul  1 04:05:48 2019] GET /cmdb/servers/?search=power => generated 21385 bytes in 103 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 3/11] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 04:05:49 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 3/12] 172.16.20.9 () {40 vars in 822 bytes} [Mon Jul  1 04:05:49 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 3/13] 172.16.20.9 () {42 vars in 937 bytes} [Mon Jul  1 05:28:08 2019] GET /cmdb/servers/?search=power => generated 21385 bytes in 101 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 3/14] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:28:08 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 15871|app: 0|req: 3/15] 172.16.20.9 () {40 vars in 822 bytes} [Mon Jul  1 05:28:09 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 4/16] 172.16.20.9 () {40 vars in 890 bytes} [Mon Jul  1 05:29:25 2019] GET /cmdb/servers/13 => generated 6721 bytes in 49 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 4/17] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:29:25 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 4/18] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 05:29:27 2019] GET /cmdb/servers/ => generated 29930 bytes in 203 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 4/19] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:29:27 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 4/20] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 05:29:27 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 5/21] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 05:31:43 2019] GET /cmdb/servers/ => generated 29930 bytes in 209 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 5/22] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:31:43 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 5/23] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 05:31:43 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 5/24] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 05:31:44 2019] GET /cmdb/racks/ => generated 15218 bytes in 59 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 5/25] 172.16.20.9 () {34 vars in 677 bytes} [Mon Jul  1 05:31:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 6/26] 172.16.20.9 () {40 vars in 803 bytes} [Mon Jul  1 05:31:44 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 6/27] 172.16.20.9 () {40 vars in 858 bytes} [Mon Jul  1 05:31:44 2019] GET /cmdb/servers/ => generated 29930 bytes in 206 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 6/28] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 6/29] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 05:31:45 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 6/30] 172.16.20.9 () {40 vars in 853 bytes} [Mon Jul  1 05:31:45 2019] GET /cmdb/idcs/ => generated 12357 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 7/31] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:45 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 7/32] 172.16.20.9 () {40 vars in 859 bytes} [Mon Jul  1 05:31:48 2019] GET /cmdb/servers/ => generated 29930 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 7/33] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:48 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 7/34] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 05:31:48 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 7/35] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 05:31:49 2019] GET /cmdb/racks/ => generated 15218 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 8/36] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:49 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 8/37] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 05:31:49 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 8/38] 172.16.20.9 () {40 vars in 859 bytes} [Mon Jul  1 05:31:50 2019] GET /cmdb/servers/ => generated 29930 bytes in 201 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 8/39] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:50 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 8/40] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 05:31:50 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 9/41] 172.16.20.9 () {40 vars in 853 bytes} [Mon Jul  1 05:31:50 2019] GET /cmdb/idcs/ => generated 12357 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 9/42] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:50 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 9/43] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 05:31:51 2019] GET /cmdb/racks/ => generated 15218 bytes in 51 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 9/44] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:51 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 9/45] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 05:31:51 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 10/46] 172.16.20.9 () {40 vars in 859 bytes} [Mon Jul  1 05:31:51 2019] GET /cmdb/servers/ => generated 29930 bytes in 199 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 10/47] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:31:51 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 10/48] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 05:31:51 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 10/49] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 05:53:40 2019] GET /cmdb/racks/ => generated 15218 bytes in 71 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 10/50] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:40 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 11/51] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 05:53:40 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 11/52] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 05:53:41 2019] GET /cmdb/servers/ => generated 29930 bytes in 210 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 11/53] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:41 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 11/54] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 05:53:41 2019] GET /cmdb/idcs/ => generated 12357 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 11/55] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:41 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 12/56] 172.16.20.9 () {42 vars in 885 bytes} [Mon Jul  1 05:53:43 2019] GET /cmdb/idcs/ => generated 12357 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 12/57] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:43 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 12/58] 172.16.20.9 () {40 vars in 824 bytes} [Mon Jul  1 05:53:43 2019] GET / => generated 4361 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 12/59] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 05:53:43 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 12/60] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:43 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 13/61] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:43 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 13/62] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 05:53:43 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 13/63] 172.16.20.9 () {40 vars in 824 bytes} [Mon Jul  1 05:53:44 2019] GET / => generated 4361 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 13/64] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 05:53:44 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 13/65] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 14/66] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:53:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 14/67] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 05:53:44 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 14/68] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 05:53:51 2019] GET /cmdb/racks/ => generated 15218 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 14/69] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 05:53:52 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 14/70] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 05:53:52 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 23 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 15/71] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 05:56:20 2019] GET /cmdb/servers/ => generated 29930 bytes in 211 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 15/72] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:56:20 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 15/73] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 05:56:20 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 15/74] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 05:57:18 2019] GET /cmdb/servers/ => generated 29930 bytes in 208 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 15/75] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:57:18 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 16/76] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 05:57:18 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 16/77] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 05:58:20 2019] GET /cmdb/servers/ => generated 29927 bytes in 206 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 16/78] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:58:20 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 16/79] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 05:58:20 2019] GET /cmdb/api_racks/ => generated 8213 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 16/80] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 05:58:22 2019] GET /cmdb/servers/ => generated 29927 bytes in 206 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 17/81] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 05:58:23 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 17/82] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 05:58:23 2019] GET /cmdb/api_racks/ => generated 8213 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 15870|app: 0|req: 17/83] 172.16.20.9 () {42 vars in 890 bytes} [Mon Jul  1 06:08:15 2019] GET /cmdb/servers/ => generated 29930 bytes in 215 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 17/84] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:08:15 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 17/85] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 06:08:15 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 18/86] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 06:09:03 2019] GET /cmdb/servers/ => generated 29930 bytes in 212 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 18/87] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:09:03 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 18/88] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:09:03 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 18/89] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 06:09:57 2019] GET /cmdb/servers/ => generated 29930 bytes in 208 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 18/90] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:09:57 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 19/91] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:09:57 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 19/92] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 06:10:12 2019] GET /cmdb/servers/ => generated 29930 bytes in 204 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 19/93] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:10:13 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 19/94] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:10:13 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 19/95] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 06:10:58 2019] GET /cmdb/servers/ => generated 29930 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 20/96] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:10:59 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 20/97] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:10:59 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 20/98] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 06:11:53 2019] GET /cmdb/racks/ => generated 15218 bytes in 58 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 20/99] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:11:53 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 20/100] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 06:11:53 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 21/101] 172.16.20.9 () {40 vars in 853 bytes} [Mon Jul  1 06:11:53 2019] GET /cmdb/idcs/ => generated 12357 bytes in 42 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 21/102] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:11:53 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 21/103] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 06:11:54 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 21/104] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:11:55 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 21/105] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 06:11:55 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 22/106] 172.16.20.9 () {40 vars in 853 bytes} [Mon Jul  1 06:11:55 2019] GET /cmdb/idcs/ => generated 12357 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 22/107] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:11:55 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 22/108] 172.16.20.9 () {40 vars in 859 bytes} [Mon Jul  1 06:11:56 2019] GET /cmdb/servers/ => generated 29930 bytes in 202 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 22/109] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:11:56 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 22/110] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 06:11:56 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 23/111] 172.16.20.9 () {40 vars in 853 bytes} [Mon Jul  1 06:11:58 2019] GET /cmdb/idcs/ => generated 12357 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 23/112] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:11:58 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 23/113] 172.16.20.9 () {40 vars in 834 bytes} [Mon Jul  1 06:12:01 2019] GET / => generated 4361 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 23/114] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 06:12:01 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 23/115] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:12:01 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 24/116] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:12:01 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 24/117] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 06:12:01 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 24/118] 172.16.20.9 () {38 vars in 819 bytes} [Mon Jul  1 06:12:24 2019] GET /cmdb/api_idcs => generated 0 bytes in 3 msecs (HTTP/1.1 301) 3 headers in 120 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 24/119] 172.16.20.9 () {38 vars in 821 bytes} [Mon Jul  1 06:12:24 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 24/120] 172.16.20.9 () {38 vars in 821 bytes} [Mon Jul  1 06:12:29 2019] GET /cmdb/api_racks => generated 0 bytes in 3 msecs (HTTP/1.1 301) 3 headers in 121 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 25/121] 172.16.20.9 () {38 vars in 823 bytes} [Mon Jul  1 06:12:29 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 25/122] 172.16.20.9 () {38 vars in 827 bytes} [Mon Jul  1 06:12:35 2019] GET /cmdb/api_servers/ => generated 91289 bytes in 179 msecs (HTTP/1.1 200) 3 headers in 103 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 25/123] 172.16.20.9 () {38 vars in 811 bytes} [Mon Jul  1 06:21:50 2019] GET /cmdb/idcs => generated 0 bytes in 4 msecs (HTTP/1.1 301) 3 headers in 116 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 25/124] 172.16.20.9 () {38 vars in 813 bytes} [Mon Jul  1 06:21:50 2019] GET /cmdb/idcs/ => generated 12357 bytes in 48 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 25/125] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:21:50 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 26/126] 172.16.20.9 () {38 vars in 815 bytes} [Mon Jul  1 06:21:55 2019] GET /cmdb/idcs/1 => generated 26 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 26/127] 172.16.20.9 () {38 vars in 815 bytes} [Mon Jul  1 06:22:04 2019] GET /cmdb/idcs/2 => generated 26 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 26/128] 172.16.20.9 () {38 vars in 815 bytes} [Mon Jul  1 06:22:06 2019] GET /cmdb/idcs/3 => generated 26 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 26/129] 172.16.20.9 () {38 vars in 813 bytes} [Mon Jul  1 06:22:08 2019] GET /cmdb/idcs/ => generated 12357 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 26/130] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:22:08 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 27/131] 172.16.20.9 () {38 vars in 817 bytes} [Mon Jul  1 06:22:10 2019] GET /cmdb/idcs/11 => generated 9337 bytes in 31 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 27/132] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:22:10 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /cmdb/i
+[pid: 15870|app: 0|req: 27/133] 172.16.20.9 () {38 vars in 805 bytes} [Mon Jul  1 06:23:17 2019] GET /cmdb/i => generated 3739 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 27/134] 172.16.20.9 () {38 vars in 793 bytes} [Mon Jul  1 06:23:19 2019] GET / => generated 4361 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 27/135] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 06:23:19 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 28/136] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:23:19 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 28/137] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:23:19 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 28/138] 172.16.20.9 () {40 vars in 817 bytes} [Mon Jul  1 06:23:19 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 28/139] 172.16.20.9 () {40 vars in 846 bytes} [Mon Jul  1 06:23:21 2019] GET /logout/ => generated 0 bytes in 26 msecs (HTTP/1.1 302) 5 headers in 214 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 28/140] 172.16.20.9 () {40 vars in 800 bytes} [Mon Jul  1 06:23:21 2019] GET /login/ => generated 3460 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 15869|app: -1|req: -1/141] 172.16.20.9 () {38 vars in 685 bytes} [Mon Jul  1 06:23:21 2019] GET /static/js/wintrue.js => generated 548 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 117 bytes (0 switches on core 0)
+[pid: 15867|app: -1|req: -1/142] 172.16.20.9 () {38 vars in 698 bytes} [Mon Jul  1 06:23:21 2019] GET /static/css/jq22.css => generated 302730 bytes in 33 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (3 switches on core 0)
+[pid: 15870|app: -1|req: -1/143] 172.16.20.9 () {38 vars in 760 bytes} [Mon Jul  1 06:23:21 2019] GET /static/images/login/owl-login.png => generated 12570 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 0)
+[pid: 15868|app: -1|req: -1/144] 172.16.20.9 () {38 vars in 768 bytes} [Mon Jul  1 06:23:21 2019] GET /static/images/login/owl-login-arm.png => generated 2412 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 15871|app: -1|req: -1/145] 172.16.20.9 () {40 vars in 786 bytes} [Mon Jul  1 06:23:21 2019] GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 => generated 81284 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+admin a123456789
+[pid: 15869|app: 0|req: 29/146] 172.16.20.9 () {46 vars in 863 bytes} [Mon Jul  1 06:23:27 2019] POST /login/ => generated 13 bytes in 351 msecs (HTTP/1.1 200) 5 headers in 245 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 29/147] 172.16.20.9 () {40 vars in 839 bytes} [Mon Jul  1 06:23:27 2019] GET / => generated 4361 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 29/148] 172.16.20.9 () {40 vars in 863 bytes} [Mon Jul  1 06:23:27 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 29/149] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:23:27 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 30/150] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:23:27 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 29/151] 172.16.20.9 () {40 vars in 818 bytes} [Mon Jul  1 06:23:27 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 30/152] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 06:24:01 2019] GET /cmdb/racks/ => generated 15218 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 30/153] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:24:01 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 30/154] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 06:24:01 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 31/155] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 06:24:01 2019] GET /cmdb/servers/ => generated 29930 bytes in 203 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 30/156] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:24:02 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 31/157] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:24:02 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 31/158] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 06:24:02 2019] GET /cmdb/servers/ => generated 29930 bytes in 201 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 31/159] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:24:02 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 32/160] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:24:02 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 15871|app: 0|req: 31/161] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 06:24:02 2019] GET /cmdb/idcs/ => generated 12357 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 32/162] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:24:03 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 15868|app: 0|req: 32/163] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 06:24:04 2019] GET /cmdb/racks/ => generated 15218 bytes in 52 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 32/164] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:24:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 33/165] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 06:24:04 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 32/166] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 06:24:04 2019] GET /cmdb/servers/ => generated 29930 bytes in 201 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 33/167] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:24:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 33/168] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:24:04 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 33/169] 172.16.20.9 () {42 vars in 871 bytes} [Mon Jul  1 06:25:40 2019] GET / => generated 4361 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 34/170] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 06:25:40 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 33/171] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:25:40 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 34/172] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:25:40 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 34/173] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 06:25:40 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 34/174] 172.16.20.9 () {42 vars in 871 bytes} [Mon Jul  1 06:26:03 2019] GET / => generated 4361 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 35/175] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 06:26:03 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 34/176] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:03 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 35/177] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:03 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 35/178] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 06:26:03 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 35/179] 172.16.20.9 () {42 vars in 871 bytes} [Mon Jul  1 06:26:04 2019] GET / => generated 4361 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 36/180] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 06:26:04 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 35/181] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 36/182] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 36/183] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 06:26:04 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 36/184] 172.16.20.9 () {40 vars in 852 bytes} [Mon Jul  1 06:26:05 2019] GET /cmdb/idcs/ => generated 12357 bytes in 41 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 37/185] 172.16.20.9 () {34 vars in 677 bytes} [Mon Jul  1 06:26:05 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 36/186] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 06:26:05 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 37/187] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:06 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 37/188] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 06:26:06 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 37/189] 172.16.20.9 () {40 vars in 859 bytes} [Mon Jul  1 06:26:06 2019] GET /cmdb/servers/ => generated 29930 bytes in 201 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 38/190] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 37/191] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 06:26:07 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 38/192] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 06:26:07 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 38/193] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 38/194] 172.16.20.9 () {40 vars in 853 bytes} [Mon Jul  1 06:26:07 2019] GET /cmdb/idcs/ => generated 12357 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 39/195] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 38/196] 172.16.20.9 () {40 vars in 859 bytes} [Mon Jul  1 06:26:08 2019] GET /cmdb/servers/ => generated 29930 bytes in 201 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 39/197] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:08 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 39/198] 172.16.20.9 () {40 vars in 808 bytes} [Mon Jul  1 06:26:08 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 39/199] 172.16.20.9 () {40 vars in 833 bytes} [Mon Jul  1 06:26:09 2019] GET / => generated 4361 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 40/200] 172.16.20.9 () {40 vars in 863 bytes} [Mon Jul  1 06:26:09 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 39/201] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:09 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 40/202] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:09 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 40/203] 172.16.20.9 () {40 vars in 818 bytes} [Mon Jul  1 06:26:09 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 40/204] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 06:26:13 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 41/205] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:13 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 40/206] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 06:26:13 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 41/207] 172.16.20.9 () {40 vars in 855 bytes} [Mon Jul  1 06:26:13 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 41/208] 172.16.20.9 () {34 vars in 678 bytes} [Mon Jul  1 06:26:13 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 41/209] 172.16.20.9 () {40 vars in 804 bytes} [Mon Jul  1 06:26:13 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 42/210] 172.16.20.9 () {40 vars in 853 bytes} [Mon Jul  1 06:26:13 2019] GET /cmdb/idcs/ => generated 12357 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 41/211] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:13 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 42/212] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 06:26:14 2019] GET /cmdb/servers/ => generated 29930 bytes in 202 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 42/213] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:14 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 42/214] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:26:14 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 43/215] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 06:26:19 2019] GET /cmdb/racks/ => generated 15218 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 42/216] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:19 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 43/217] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 06:26:20 2019] GET /cmdb/servers/ => generated 29930 bytes in 202 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 43/218] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:20 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 43/219] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:26:20 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 44/220] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 06:26:20 2019] GET /cmdb/idcs/ => generated 12357 bytes in 39 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 43/221] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:26:20 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 44/222] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 06:57:50 2019] GET /cmdb/servers/ => generated 29930 bytes in 217 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 44/223] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 06:57:50 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 44/224] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 06:57:50 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 38 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 45/225] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 07:02:38 2019] GET /cmdb/servers/ => generated 29930 bytes in 209 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 44/226] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:02:38 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 45/227] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 07:02:39 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 45/228] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 07:02:41 2019] GET /cmdb/servers/ => generated 29930 bytes in 208 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 45/229] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:02:41 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 46/230] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 07:02:42 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 45/231] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 07:02:44 2019] GET /cmdb/racks/ => generated 15218 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15867|app: 0|req: 46/232] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:02:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 46/233] 172.16.20.9 () {40 vars in 805 bytes} [Mon Jul  1 07:02:44 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 46/234] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 07:02:44 2019] GET /cmdb/servers/ => generated 29930 bytes in 208 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15869|app: 0|req: 47/235] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:02:45 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15871|app: 0|req: 46/236] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 07:02:45 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 47/237] 172.16.20.9 () {42 vars in 865 bytes} [Mon Jul  1 07:04:51 2019] GET / => generated 4361 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15868|app: 0|req: 47/238] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 07:04:51 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15870|app: 0|req: 47/239] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:04:51 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15871|app: 0|req: 47/240] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:04:51 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15869|app: 0|req: 48/241] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 07:04:51 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 15867|app: 0|req: 48/242] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 07:04:52 2019] GET /cmdb/servers/ => generated 29930 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 15868|app: 0|req: 48/243] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:04:53 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15870|app: 0|req: 48/244] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 07:04:53 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+gateway "uWSGI http 1" has been buried (pid: 15872)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 15867)...
+Gracefully killing worker 2 (pid: 15868)...
+Gracefully killing worker 3 (pid: 15869)...
+Gracefully killing worker 5 (pid: 15871)...
+Gracefully killing worker 4 (pid: 15870)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /tmp/ops/script
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (/tmp/ops/ops.sock)
+running /usr/local/venv/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+[uwsgi-static] added mapping for /static => /tmp/ops/static
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jul  1 07:05:04 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops/script
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 inherited UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0x209aa00
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x209aa00 pid: 15753 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 15753)
+spawned uWSGI worker 1 (pid: 16309, cores: 1)
+spawned uWSGI worker 2 (pid: 16310, cores: 1)
+spawned uWSGI worker 3 (pid: 16311, cores: 1)
+spawned uWSGI worker 4 (pid: 16312, cores: 1)
+spawned uWSGI worker 5 (pid: 16313, cores: 1)
+spawned uWSGI http 1 (pid: 16314)
+[pid: 16309|app: 0|req: 1/1] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 07:05:05 2019] GET /cmdb/servers/ => generated 29930 bytes in 242 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 16311|app: 0|req: 1/2] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:05:06 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 40 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16312|app: 0|req: 1/3] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 07:05:06 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 71 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16310|app: 0|req: 1/4] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 07:08:09 2019] GET /cmdb/servers/ => generated 29930 bytes in 326 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 16313|app: 0|req: 1/5] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:08:10 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 60 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16309|app: 0|req: 2/6] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 07:08:10 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 16311|app: 0|req: 2/7] 172.16.20.9 () {42 vars in 865 bytes} [Mon Jul  1 07:18:37 2019] GET / => generated 4361 bytes in 112 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 16310|app: 0|req: 2/8] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:18:37 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16312|app: 0|req: 2/9] 172.16.20.9 () {40 vars in 864 bytes} [Mon Jul  1 07:18:37 2019] GET /cmdb/dashboard/ => generated 6668 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 16313|app: 0|req: 2/10] 172.16.20.9 () {34 vars in 679 bytes} [Mon Jul  1 07:18:37 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16309|app: 0|req: 3/11] 172.16.20.9 () {40 vars in 819 bytes} [Mon Jul  1 07:18:37 2019] GET /cmdb/api_dashboard/ => generated 280 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 16311|app: 0|req: 3/12] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 07:35:38 2019] GET /cmdb/racks/ => generated 15218 bytes in 105 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16310|app: 0|req: 3/13] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 07:35:39 2019] GET /cmdb/idcs/ => generated 12357 bytes in 58 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16312|app: 0|req: 3/14] 172.16.20.9 () {40 vars in 860 bytes} [Mon Jul  1 07:35:39 2019] GET /cmdb/servers/ => generated 29930 bytes in 232 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16313|app: 0|req: 3/15] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 07:35:39 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16309|app: 0|req: 4/16] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 08:06:52 2019] GET /cmdb/servers/ => generated 29930 bytes in 231 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16311|app: 0|req: 4/17] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 08:06:53 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 47 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16310|app: 0|req: 4/18] 172.16.20.9 () {40 vars in 854 bytes} [Mon Jul  1 08:29:09 2019] GET /cmdb/idcs/ => generated 12357 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16312|app: 0|req: 4/19] 172.16.20.9 () {40 vars in 856 bytes} [Mon Jul  1 08:29:10 2019] GET /cmdb/racks/ => generated 15218 bytes in 68 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16313|app: 0|req: 4/20] 172.16.20.9 () {40 vars in 803 bytes} [Mon Jul  1 08:29:10 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 16309|app: 0|req: 5/21] 172.16.20.9 () {40 vars in 858 bytes} [Mon Jul  1 08:29:10 2019] GET /cmdb/servers/ => generated 29930 bytes in 213 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16311|app: 0|req: 5/22] 172.16.20.9 () {40 vars in 807 bytes} [Mon Jul  1 08:29:11 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 36 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16310|app: 0|req: 5/23] 172.16.20.9 () {42 vars in 891 bytes} [Mon Jul  1 09:22:30 2019] GET /cmdb/servers/ => generated 29930 bytes in 231 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16312|app: 0|req: 5/24] 172.16.20.9 () {40 vars in 809 bytes} [Mon Jul  1 09:22:31 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 39 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 16313|app: 0|req: 5/25] 172.16.20.9 () {40 vars in 854 bytes} [Tue Jul  2 01:43:45 2019] GET /cmdb/idcs/ => generated 12357 bytes in 97 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16309|app: 0|req: 6/26] 172.16.20.9 () {40 vars in 859 bytes} [Tue Jul  2 04:05:34 2019] GET /cmdb/servers/ => generated 29930 bytes in 225 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 16311|app: 0|req: 6/27] 172.16.20.9 () {40 vars in 808 bytes} [Tue Jul  2 04:05:34 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)

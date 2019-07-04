@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "cmdb/modal_idcs.html" %}
+
+    <ol class="breadcrumb">
+        <li><a href="/cmdb/idcs/"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">机房</li>
+        <li class="active">{{ id }}</li>
+    </ol>
+
+    <div class="col-md-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">机房信息</h3>
+                <form class="form-horizontal">
+                  <div class="box-body">
+
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-2 control-label">ID</label>
+
+                      <div class="col-sm-10">
+                          <p class="text-muted well well-sm no-shadow"> {{ id }}</p>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">机房名</label>
+
+                      <div class="col-sm-10">
+                          <p class="text-muted well well-sm no-shadow"> {{ name }}</p>
+                      </div>
+                    </div>
+
+                      <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">机柜数</label>
+
+                      <div class="col-sm-10">
+                          <p>{{ rack.count }}</p>
+                      </div>
+                    </div>
+
+                      <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">地址</label>
+
+                      <div class="col-sm-10">
+                          <p> {{ address }}</p>
+                      </div>
+                    </div>
+
+                      <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-2 control-label">备注</label>
+
+                      <div class="col-sm-10">
+                          <p> {{ remark }}</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <h3 class="box-title">相关机柜</h3>
+
+                <div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>机柜名</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {%  for obj in racks.data %}
+                                <tr>
+                                    <td> <a href="/cmdb/racks/{{ obj.id }}"> {{ obj.id }}</a></td>
+                                    <td> {{ obj.name }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
