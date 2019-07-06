@@ -8,10 +8,13 @@ def handle_save_data(func):
             return func(*args,**kwargs)
         except Exception as e:
             code = e.args[0]
-            desc = e.args[1]
             if code == 1062:
-                instance = '名称重复({})'.format(desc)
-            return JsonResponse({'data': instance, 'status':0})
+                status = -1
+                msg = e.args[1]
+            else:
+                status = -2
+                msg = e.args[0]
+            return JsonResponse({'status':status, 'msg':msg})
     return wrapper
 
 

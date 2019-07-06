@@ -3,9 +3,9 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 class User(AbstractUser):
     ROLES = (
-        ('developer_supremo', u'总监'),
-        ('developer_manager', u'经理'),
-        ('developer', u'研发'),
+        ('1', u'总监'),
+        ('2', u'经理'),
+        ('3', u'研发'),
     )
     leader = models.ForeignKey('User', null=True, blank=True, on_delete=models.CASCADE, related_name='leader_devs')
     admin_mail = models.ForeignKey('User', null=True, blank=True, on_delete=models.CASCADE, related_name='admin_devs')
@@ -16,5 +16,15 @@ class User(AbstractUser):
     class Meta:
         verbose_name_plural = u'用户'
 
-    def __unicode__(self):
+    def __str__(self):
         return self.username
+
+    @property
+    def to_dict(self):
+        ret = dict()
+        for attr in [f.name for f in self._meta.fields]:
+            value = getattr(self,attr)
+            ret[attr] = value
+        group = self.groups.first()
+        ret['group'] = group.name if group else ''
+        return ret

@@ -15,7 +15,7 @@ class IdcView(BaseListView):
 
     def get_queryset(self):
         queryset = self.model.objects.all()
-        search = self.request.GET.get('search')
+        search = self.request.GET.get('search','')
         if search:
             queryset = queryset.filter(Q(name__contains=search)|Q(address__contains=search))
         qs = [i.to_dict for i in queryset]

@@ -7,6 +7,7 @@ from django.http import JsonResponse,QueryDict
 from utils.wrappers import handle_save_data
 
 class BaseListView(LoginRequiredMixin,ListView):
+    """列表页/详情页，增删改查，通用类视图"""
     model = None
     template_detail = None
     paginate_by = 10
@@ -44,7 +45,7 @@ class BaseListView(LoginRequiredMixin,ListView):
             count = queryset.filter(Q(name__icontains=search) | Q(ip__contains=search) | Q(server_type__icontains=search) | Q(remark__icontains=search) | Q(os__icontains=search)).count()
             # print(count)
         paginator_data = self.handle_page(page,object_list)
-        return render(request, self.template_name, {'paginator_data': paginator_data,'count':count})
+        return render(request, self.template_name, {'paginator_data': paginator_data,'count':count,'search':search})
 
     @handle_save_data
     def post(self,request,*args,**kwargs):
@@ -77,7 +78,6 @@ class APIBaseView(View):
         if pk:
             try:
                 instance = self.model.objects.get(pk=pk).to_dict
-
             except Exception as e:
                 instance = e.args[0]
             return JsonResponse({'data':instance,'status':1})

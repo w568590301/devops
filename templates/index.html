@@ -60,21 +60,89 @@
     <section class="sidebar">
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-{#        <li class="header" style="font-weight:blod;"></li>#}
+{#        <li class="header" style="font-weight:blod;">产品技术运维中心</li>#}
+
         <li class="active treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>CMDB</span>
+         <a href="#">
+            <i class="fa fa-dashboard"></i>
+             <span>CMDB</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
+              <li class="active treeview">
               <li class="active"><a href="/cmdb/idcs/" target="mainPage"><i class="fa fa-circle-o"></i>机房</a></li>
               <li><a href="/cmdb/racks/" target="mainPage"><i class="fa fa-circle-o"></i>机柜</a></li>
               <li><a href="/cmdb/servers/" target="mainPage"><i class="fa fa-circle-o"></i>服务器</a></li>
           </ul>
         </li>
       </ul>
+
+        <ul class="sidebar-menu">
+{#        <li class="header" style="font-weight:blod;">产品技术运维中心</li>#}
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-tasks"></i>
+            <span>SQL审核平台</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-circle"></i><span>sql上线</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+            	    <li class="ckli"><a href="/sqlmng/inception_check/" target="mainPage"><i class="fa fa-circle-o"></i>审核</a></li>
+            	    <li class="ckli"><a href="/sqlmng/inception_result/" target="mainPage"><i class="fa fa-circle-o"></i>处理</a></li>
+                </ul>
+            </li>
+
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-circle"></i><span>sql优化</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="ckli"><a href="/sqlmng/optimize_check/" target="mainPage"><i class="fa fa-circle-o"></i>提交</a></li>
+                </ul>
+            </li>
+
+            {% if request.user.is_superuser %}
+            <li class="treeview">
+                <a href="/sqlmng/dbconfig/" target="mainPage">
+                    <i class="fa fa-circle"></i><span>数据库配置</span>
+                </a>
+            </li>
+            {% endif %}
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-tasks"></i>
+            <span>用户和组</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+          	<li class="ckli"><a href="/account/users/" target="mainPage"><i class="fa fa-circle-o"></i>用户</a></li>
+          	<li class="ckli"><a href="/account/groups/" target="mainPage"><i class="fa fa-circle-o"></i>组</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+
     </section>
     <!-- /.sidebar -->
   </aside>

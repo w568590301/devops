@@ -1031,3 +1031,657 @@ Not Found: /static/js/highcharts.js.map
 [pid: 16313|app: 0|req: 5/25] 172.16.20.9 () {40 vars in 854 bytes} [Tue Jul  2 01:43:45 2019] GET /cmdb/idcs/ => generated 12357 bytes in 97 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
 [pid: 16309|app: 0|req: 6/26] 172.16.20.9 () {40 vars in 859 bytes} [Tue Jul  2 04:05:34 2019] GET /cmdb/servers/ => generated 29930 bytes in 225 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
 [pid: 16311|app: 0|req: 6/27] 172.16.20.9 () {40 vars in 808 bytes} [Tue Jul  2 04:05:34 2019] GET /cmdb/api_racks/ => generated 8219 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Jul  4 17:12:01 2019] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-23) on 01 July 2019 03:11:34
+os: Linux-2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013
+nodename: devops
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /tmp/ops
+writing pidfile to /tmp/ops/script/uwsgi.pid
+detected binary path: /usr/local/venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /tmp/ops
+your processes number limit is 30507
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+building mime-types dictionary from file /etc/mime.types...883 entry found
+lock engine: pthread robust mutexes
+thunder lock: enabled
+uWSGI http bound on 0.0.0.0:8001 fd 3
+uwsgi socket 0 bound to UNIX address /tmp/ops/ops.sock fd 6
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.6 (default, May 20 2019, 09:50:42)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-23)]
+Python main interpreter initialized at 0x22c2bf0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486672 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+ModuleNotFoundError: No module named 'ops.ops'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x22c2bf0 pid: 23027 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23027)
+spawned uWSGI worker 1 (pid: 23029, cores: 1)
+spawned uWSGI worker 2 (pid: 23030, cores: 1)
+spawned uWSGI worker 3 (pid: 23031, cores: 1)
+spawned uWSGI worker 4 (pid: 23032, cores: 1)
+spawned uWSGI worker 5 (pid: 23033, cores: 1)
+spawned uWSGI http 1 (pid: 23034)
+[pid: 23029|app: 0|req: 1/1] 172.16.20.9 () {38 vars in 793 bytes} [Thu Jul  4 09:12:21 2019] GET / => generated 4361 bytes in 104 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/2] 172.16.20.9 () {38 vars in 755 bytes} [Thu Jul  4 09:12:22 2019] GET /static/css/bootstrap.min.css => generated 121260 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/3] 172.16.20.9 () {38 vars in 761 bytes} [Thu Jul  4 09:12:22 2019] GET /static/css/font-awesome.min.css => generated 27466 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/4] 172.16.20.9 () {38 vars in 753 bytes} [Thu Jul  4 09:12:22 2019] GET /static/css/ionicons.min.css => generated 51284 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/5] 172.16.20.9 () {38 vars in 753 bytes} [Thu Jul  4 09:12:22 2019] GET /static/css/AdminLTE.min.css => generated 90217 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/6] 172.16.20.9 () {38 vars in 755 bytes} [Thu Jul  4 09:12:22 2019] GET /static/css/skin-blue.min.css => generated 3037 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/7] 172.16.20.9 () {38 vars in 730 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/jquery.min.js => generated 94840 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/8] 172.16.20.9 () {38 vars in 736 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/bootstrap.min.js => generated 27731 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/9] 172.16.20.9 () {38 vars in 728 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/fastclick.js => generated 25965 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/10] 172.16.20.9 () {38 vars in 724 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/app.min.js => generated 9774 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 118 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/11] 172.16.20.9 () {38 vars in 750 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/jquery.sparkline.min.js => generated 43247 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/12] 172.16.20.9 () {38 vars in 764 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 33323 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/13] 172.16.20.9 () {38 vars in 772 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 144313 bytes in 8 msecs via sendfile() (HTTP/1.1 200) 3 headers in 120 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/14] 172.16.20.9 () {38 vars in 752 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/jquery.slimscroll.min.js => generated 4724 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 118 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/15] 172.16.20.9 () {38 vars in 728 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/Chart.min.js => generated 57275 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/16] 172.16.20.9 () {38 vars in 718 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/demo.js => generated 17319 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/17] 172.16.20.9 () {38 vars in 730 bytes} [Thu Jul  4 09:12:22 2019] GET /static/js/highcharts.js => generated 233364 bytes in 16 msecs via sendfile() (HTTP/1.1 200) 3 headers in 120 bytes (2 switches on core 0)
+[pid: 23033|app: -1|req: -1/18] 172.16.20.9 () {40 vars in 845 bytes} [Thu Jul  4 09:12:22 2019] GET /static/fonts/fontawesome-webfont.woff2?v=4.5.0 => generated 64464 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 1/19] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:12:22 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 69 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+[pid: 23029|app: -1|req: -1/20] 172.16.20.9 () {40 vars in 815 bytes} [Thu Jul  4 09:12:22 2019] GET /static/fonts/ionicons.ttf?v=2.0.0 => generated 8238 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/21] 172.16.20.9 () {40 vars in 817 bytes} [Thu Jul  4 09:12:22 2019] GET /static/fonts/ionicons.woff?v=2.0.0 => generated 8244 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+Not Found: /favicon.ico
+[pid: 23033|app: 0|req: 1/22] 172.16.20.9 () {38 vars in 742 bytes} [Thu Jul  4 09:12:22 2019] GET /favicon.ico => generated 2394 bytes in 53 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 1/23] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:12:22 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 93 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 2/24] 172.16.20.9 () {40 vars in 860 bytes} [Thu Jul  4 09:13:12 2019] GET /cmdb/servers/ => generated 31133 bytes in 255 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/25] 172.16.20.9 () {40 vars in 845 bytes} [Thu Jul  4 09:13:12 2019] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 18028 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+[pid: 23029|app: 0|req: 2/26] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:13:12 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 40 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 2/27] 172.16.20.9 () {40 vars in 856 bytes} [Thu Jul  4 09:13:14 2019] GET /cmdb/racks/ => generated 15257 bytes in 107 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 2/28] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:13:14 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 3/29] 172.16.20.9 () {40 vars in 854 bytes} [Thu Jul  4 09:13:14 2019] GET /cmdb/idcs/ => generated 12357 bytes in 40 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+[pid: 23030|app: 0|req: 1/30] 172.16.20.9 () {40 vars in 860 bytes} [Thu Jul  4 09:13:15 2019] GET /cmdb/servers/ => generated 31133 bytes in 312 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 3/31] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:13:16 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 3/32] 172.16.20.9 () {40 vars in 856 bytes} [Thu Jul  4 09:13:16 2019] GET /cmdb/racks/ => generated 15257 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 3/33] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:13:16 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 4/34] 172.16.20.9 () {40 vars in 860 bytes} [Thu Jul  4 09:13:16 2019] GET /cmdb/servers/ => generated 31133 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 2/35] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:13:17 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 4/36] 172.16.20.9 () {42 vars in 891 bytes} [Thu Jul  4 09:14:44 2019] GET /cmdb/servers/ => generated 31133 bytes in 233 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/37] 172.16.20.9 () {40 vars in 823 bytes} [Thu Jul  4 09:14:44 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/38] 172.16.20.9 () {40 vars in 829 bytes} [Thu Jul  4 09:14:44 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/39] 172.16.20.9 () {40 vars in 821 bytes} [Thu Jul  4 09:14:44 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/40] 172.16.20.9 () {40 vars in 821 bytes} [Thu Jul  4 09:14:44 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/41] 172.16.20.9 () {40 vars in 798 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/42] 172.16.20.9 () {40 vars in 823 bytes} [Thu Jul  4 09:14:44 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/43] 172.16.20.9 () {40 vars in 804 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/44] 172.16.20.9 () {40 vars in 796 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/45] 172.16.20.9 () {40 vars in 792 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/46] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/47] 172.16.20.9 () {40 vars in 840 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/48] 172.16.20.9 () {40 vars in 820 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/49] 172.16.20.9 () {40 vars in 796 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/50] 172.16.20.9 () {40 vars in 832 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/51] 172.16.20.9 () {40 vars in 786 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/52] 172.16.20.9 () {40 vars in 798 bytes} [Thu Jul  4 09:14:44 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 5/53] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:14:44 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 3/54] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:14:46 2019] GET / => generated 4589 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+[pid: 23029|app: 0|req: 5/55] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:14:46 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 4/56] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:14:46 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 4/57] 172.16.20.9 () {42 vars in 893 bytes} [Thu Jul  4 09:15:42 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23032|app: 0|req: 6/58] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:15:42 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 4/59] 172.16.20.9 () {40 vars in 823 bytes} [Thu Jul  4 09:15:45 2019] GET / => generated 4600 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 6/60] 172.16.20.9 () {40 vars in 863 bytes} [Thu Jul  4 09:15:45 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 5/61] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:15:45 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 5/62] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:16:36 2019] GET / => generated 4600 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+[pid: 23032|app: -1|req: -1/63] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:16:36 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/64] 172.16.20.9 () {40 vars in 816 bytes} [Thu Jul  4 09:16:36 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/65] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:16:36 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/66] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:16:36 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/67] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:16:36 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/68] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/69] 172.16.20.9 () {40 vars in 791 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/70] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/71] 172.16.20.9 () {40 vars in 779 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/72] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/73] 172.16.20.9 () {40 vars in 827 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/74] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/75] 172.16.20.9 () {40 vars in 807 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/76] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/77] 172.16.20.9 () {40 vars in 773 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/78] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:16:36 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 6/79] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:16:36 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23029|app: 0|req: 7/80] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:16:36 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 6/81] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:16:38 2019] GET / => generated 4600 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+[pid: 23032|app: 0|req: 7/82] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:16:38 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23030|app: 0|req: 5/83] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:16:38 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23031|app: 0|req: 7/84] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:18:31 2019] GET / => generated 4361 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/85] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:18:31 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/86] 172.16.20.9 () {40 vars in 816 bytes} [Thu Jul  4 09:18:31 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/87] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:18:31 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/88] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:18:31 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/89] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:18:31 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/90] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/91] 172.16.20.9 () {40 vars in 791 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/92] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/93] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/94] 172.16.20.9 () {40 vars in 779 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/95] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/96] 172.16.20.9 () {40 vars in 827 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/97] 172.16.20.9 () {40 vars in 807 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/98] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/99] 172.16.20.9 () {40 vars in 773 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/100] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:18:31 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: 0|req: 7/101] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:18:31 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23032|app: 0|req: 8/102] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:18:31 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 6/103] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:18:31 2019] GET / => generated 4361 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 8/104] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:18:31 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 8/105] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:18:31 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 8/106] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:18:32 2019] GET / => generated 4361 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 9/107] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:18:32 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23030|app: 0|req: 7/108] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:18:32 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 9/109] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:18:33 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 23031|app: -1|req: -1/110] 172.16.20.9 () {34 vars in 689 bytes} [Thu Jul  4 09:18:33 2019] GET /static/css/bootstrap.min.css.map => generated 54416 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 9/111] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:19:06 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 23032|app: 0|req: 10/112] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:20:15 2019] GET / => generated 5085 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 8/113] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:20:15 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 10/114] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:20:15 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 9/115] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:20:15 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 15 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 10/116] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:20:15 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 11/117] 172.16.20.9 () {42 vars in 895 bytes} [Thu Jul  4 09:20:50 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/118] 172.16.20.9 () {40 vars in 825 bytes} [Thu Jul  4 09:20:50 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/119] 172.16.20.9 () {40 vars in 831 bytes} [Thu Jul  4 09:20:50 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/120] 172.16.20.9 () {40 vars in 823 bytes} [Thu Jul  4 09:20:50 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/121] 172.16.20.9 () {40 vars in 823 bytes} [Thu Jul  4 09:20:50 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/122] 172.16.20.9 () {40 vars in 825 bytes} [Thu Jul  4 09:20:50 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/123] 172.16.20.9 () {40 vars in 800 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/124] 172.16.20.9 () {40 vars in 806 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/125] 172.16.20.9 () {40 vars in 798 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/126] 172.16.20.9 () {40 vars in 820 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/127] 172.16.20.9 () {40 vars in 794 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/app.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/128] 172.16.20.9 () {40 vars in 834 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/129] 172.16.20.9 () {40 vars in 798 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/130] 172.16.20.9 () {40 vars in 788 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/132] 172.16.20.9 () {40 vars in 822 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/132] 172.16.20.9 () {40 vars in 842 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/133] 172.16.20.9 () {40 vars in 800 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 11/134] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:20:50 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 10/135] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:20:50 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23030|app: 0|req: 9/136] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:20:51 2019] GET / => generated 4975 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 11/137] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:20:51 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 12/138] 172.16.20.9 () {34 vars in 677 bytes} [Thu Jul  4 09:20:51 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/139] 172.16.20.9 () {36 vars in 742 bytes} [Thu Jul  4 09:20:51 2019] GET /static/css/bootstrap.min.css.map => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 11/140] 172.16.20.9 () {34 vars in 678 bytes} [Thu Jul  4 09:20:51 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23030|app: 0|req: 10/141] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:20:51 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 12/142] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:30:21 2019] GET / => generated 5064 bytes in 27 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/143] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:30:21 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/144] 172.16.20.9 () {40 vars in 816 bytes} [Thu Jul  4 09:30:21 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/145] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:30:21 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/146] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:30:21 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/147] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:30:21 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/148] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/149] 172.16.20.9 () {40 vars in 791 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/150] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/151] 172.16.20.9 () {40 vars in 779 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/152] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/153] 172.16.20.9 () {40 vars in 827 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/154] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/155] 172.16.20.9 () {40 vars in 807 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/156] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/157] 172.16.20.9 () {40 vars in 773 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/158] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 13/159] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:30:21 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+[pid: 23030|app: -1|req: -1/160] 172.16.20.9 () {42 vars in 900 bytes} [Thu Jul  4 09:30:21 2019] GET /static/fonts/fontawesome-webfont.woff2?v=4.5.0 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 12/161] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 23032|app: -1|req: -1/162] 172.16.20.9 () {36 vars in 744 bytes} [Thu Jul  4 09:30:21 2019] GET /static/css/bootstrap.min.css.map => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 12/163] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:30:21 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/164] 172.16.20.9 () {42 vars in 870 bytes} [Thu Jul  4 09:30:21 2019] GET /static/fonts/ionicons.ttf?v=2.0.0 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/165] 172.16.20.9 () {42 vars in 872 bytes} [Thu Jul  4 09:30:21 2019] GET /static/fonts/ionicons.woff?v=2.0.0 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 14/166] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:30:21 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 13/167] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:31:44 2019] GET / => generated 5022 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 13/168] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:31:44 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 11/169] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:31:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 20 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 13/170] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:31:45 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 15/171] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:31:45 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23032|app: 0|req: 14/172] 172.16.20.9 () {40 vars in 824 bytes} [Thu Jul  4 09:33:25 2019] GET / => generated 4361 bytes in 24 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+[pid: 23029|app: 0|req: 14/173] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:33:25 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 12/174] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:33:25 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 14/175] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:33:25 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 16/176] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:33:25 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 15/177] 172.16.20.9 () {40 vars in 856 bytes} [Thu Jul  4 09:33:37 2019] GET /cmdb/racks/ => generated 15257 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/179] 172.16.20.9 () {40 vars in 821 bytes} [Thu Jul  4 09:33:37 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/179] 172.16.20.9 () {40 vars in 827 bytes} [Thu Jul  4 09:33:37 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/180] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:33:37 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/181] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:33:37 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/182] 172.16.20.9 () {40 vars in 821 bytes} [Thu Jul  4 09:33:37 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/183] 172.16.20.9 () {40 vars in 796 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/184] 172.16.20.9 () {40 vars in 802 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/185] 172.16.20.9 () {40 vars in 794 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/186] 172.16.20.9 () {40 vars in 790 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/187] 172.16.20.9 () {40 vars in 830 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/188] 172.16.20.9 () {40 vars in 816 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/189] 172.16.20.9 () {40 vars in 838 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/190] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/191] 172.16.20.9 () {40 vars in 794 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/192] 172.16.20.9 () {40 vars in 784 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/193] 172.16.20.9 () {40 vars in 796 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/194] 172.16.20.9 () {42 vars in 900 bytes} [Thu Jul  4 09:33:37 2019] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 15/195] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:33:37 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 17/196] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:33:37 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23029|app: 0|req: 15/197] 172.16.20.9 () {40 vars in 860 bytes} [Thu Jul  4 09:33:38 2019] GET /cmdb/servers/ => generated 31133 bytes in 221 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 16/198] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:33:38 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 13/199] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:33:38 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 16/200] 172.16.20.9 () {40 vars in 834 bytes} [Thu Jul  4 09:33:39 2019] GET / => generated 4361 bytes in 20 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 18/201] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:33:39 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 16/202] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:33:39 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 23032|app: -1|req: -1/203] 172.16.20.9 () {36 vars in 744 bytes} [Thu Jul  4 09:33:39 2019] GET /static/css/bootstrap.min.css.map => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 14/204] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:33:39 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 17/205] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:33:39 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23033|app: 0|req: 19/206] 172.16.20.9 () {40 vars in 860 bytes} [Thu Jul  4 09:33:41 2019] GET /cmdb/servers/ => generated 31133 bytes in 225 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 17/207] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:33:41 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 17/208] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:33:42 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 15/209] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:35:14 2019] GET / => generated 4419 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 18/210] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:35:14 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 20/211] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:35:14 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 18/212] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:35:14 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23032|app: 0|req: 18/213] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:35:14 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 16/214] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:36:43 2019] GET / => generated 4443 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 19/215] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:36:43 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 21/216] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:36:43 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 19/217] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:36:43 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23032|app: 0|req: 19/218] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:36:44 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 17/219] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:36:57 2019] GET / => generated 4361 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 20/220] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:36:57 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 22/221] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:36:57 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 20/222] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:36:57 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23029|app: 0|req: 20/223] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:36:57 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 18/224] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:38:52 2019] GET / => generated 6836 bytes in 22 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/225] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:38:52 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/226] 172.16.20.9 () {40 vars in 816 bytes} [Thu Jul  4 09:38:52 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/227] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:38:52 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/228] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:38:52 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/229] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:38:52 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/230] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/231] 172.16.20.9 () {40 vars in 791 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/232] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/233] 172.16.20.9 () {40 vars in 779 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/234] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/235] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/236] 172.16.20.9 () {40 vars in 827 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/237] 172.16.20.9 () {40 vars in 807 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/238] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/239] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/240] 172.16.20.9 () {40 vars in 773 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: 0|req: 23/241] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:38:52 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 21/242] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 23029|app: -1|req: -1/243] 172.16.20.9 () {36 vars in 744 bytes} [Thu Jul  4 09:38:52 2019] GET /static/css/bootstrap.min.css.map => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 19/244] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:38:52 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 21/245] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:38:52 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 24/246] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:39:09 2019] GET / => generated 0 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 121 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 22/247] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:39:10 2019] GET / => generated 6748 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 21/248] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:39:10 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 20/249] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:39:10 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 22/250] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:39:10 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 25/251] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:39:10 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 23/252] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:39:16 2019] GET / => generated 6748 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+[pid: 23029|app: 0|req: 22/253] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:39:16 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 21/254] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:39:16 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 23/255] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:39:16 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 26/256] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:39:16 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 24/257] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:39:16 2019] GET / => generated 6748 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 23/258] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:39:16 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 22/259] 172.16.20.9 () {34 vars in 677 bytes} [Thu Jul  4 09:39:16 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 24/260] 172.16.20.9 () {34 vars in 677 bytes} [Thu Jul  4 09:39:17 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 27/261] 172.16.20.9 () {40 vars in 817 bytes} [Thu Jul  4 09:39:17 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 25/262] 172.16.20.9 () {42 vars in 863 bytes} [Thu Jul  4 09:39:17 2019] GET / => generated 6748 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 24/263] 172.16.20.9 () {40 vars in 863 bytes} [Thu Jul  4 09:39:18 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 23/264] 172.16.20.9 () {34 vars in 678 bytes} [Thu Jul  4 09:39:18 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 25/265] 172.16.20.9 () {34 vars in 678 bytes} [Thu Jul  4 09:39:18 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 28/266] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:39:18 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 26/267] 172.16.20.9 () {40 vars in 833 bytes} [Thu Jul  4 09:39:18 2019] GET / => generated 6748 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 25/268] 172.16.20.9 () {40 vars in 863 bytes} [Thu Jul  4 09:39:18 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 24/269] 172.16.20.9 () {34 vars in 678 bytes} [Thu Jul  4 09:39:18 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 29/270] 172.16.20.9 () {34 vars in 678 bytes} [Thu Jul  4 09:39:18 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 26/271] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:39:18 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23032|app: 0|req: 27/272] 172.16.20.9 () {40 vars in 833 bytes} [Thu Jul  4 09:39:19 2019] GET / => generated 6748 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 26/273] 172.16.20.9 () {40 vars in 863 bytes} [Thu Jul  4 09:39:19 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 25/274] 172.16.20.9 () {34 vars in 678 bytes} [Thu Jul  4 09:39:19 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 27/275] 172.16.20.9 () {34 vars in 678 bytes} [Thu Jul  4 09:39:19 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 30/276] 172.16.20.9 () {40 vars in 818 bytes} [Thu Jul  4 09:39:19 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 28/277] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:40:43 2019] GET / => generated 6804 bytes in 23 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 27/278] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:40:44 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 26/279] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 28/280] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 31/281] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:40:44 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 29/282] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:40:44 2019] GET / => generated 6804 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 28/283] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:40:44 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 27/284] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:44 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 29/285] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:45 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 32/286] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:40:45 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23032|app: 0|req: 30/287] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:40:45 2019] GET / => generated 6804 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 29/288] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:40:45 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 28/289] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:45 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 33/290] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:46 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 30/291] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:40:46 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 31/292] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:40:46 2019] GET / => generated 6804 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 30/293] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:40:46 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 29/294] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:46 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 34/295] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:46 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 31/296] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:40:46 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 32/297] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:40:47 2019] GET / => generated 6804 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 31/298] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:40:48 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 30/299] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:48 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 35/300] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:48 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 32/301] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:40:48 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 33/302] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:40:54 2019] GET / => generated 6804 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 32/303] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:40:54 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 31/304] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:54 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 36/305] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:54 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 33/306] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:40:54 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 34/307] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:40:54 2019] GET / => generated 6804 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+[pid: 23029|app: 0|req: 33/308] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:40:54 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 32/309] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:54 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 34/310] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:54 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23033|app: 0|req: 37/311] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:40:54 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 35/312] 172.16.20.9 () {40 vars in 856 bytes} [Thu Jul  4 09:40:56 2019] GET /cmdb/racks/ => generated 15257 bytes in 57 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 34/313] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:56 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 33/314] 172.16.20.9 () {40 vars in 860 bytes} [Thu Jul  4 09:40:57 2019] GET /cmdb/servers/ => generated 31133 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 35/315] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:57 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 38/316] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:40:57 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 36/317] 172.16.20.9 () {40 vars in 856 bytes} [Thu Jul  4 09:40:57 2019] GET /cmdb/racks/ => generated 15257 bytes in 54 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 35/318] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:57 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 34/319] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:40:57 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 36/320] 172.16.20.9 () {40 vars in 854 bytes} [Thu Jul  4 09:40:58 2019] GET /cmdb/idcs/ => generated 12357 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 39/321] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:40:58 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 37/322] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:03 2019] GET / => generated 4434 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/323] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:44:03 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/324] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:44:03 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/325] 172.16.20.9 () {40 vars in 816 bytes} [Thu Jul  4 09:44:03 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/326] 172.16.20.9 () {40 vars in 808 bytes} [Thu Jul  4 09:44:03 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/327] 172.16.20.9 () {40 vars in 810 bytes} [Thu Jul  4 09:44:03 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/328] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/329] 172.16.20.9 () {40 vars in 791 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/330] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/331] 172.16.20.9 () {40 vars in 779 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/332] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/333] 172.16.20.9 () {40 vars in 827 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/335] 172.16.20.9 () {40 vars in 807 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/335] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/336] 172.16.20.9 () {40 vars in 783 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/337] 172.16.20.9 () {40 vars in 773 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/338] 172.16.20.9 () {40 vars in 785 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 35/339] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:03 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 38/340] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/341] 172.16.20.9 () {36 vars in 744 bytes} [Thu Jul  4 09:44:03 2019] GET /static/css/bootstrap.min.css.map => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 36/342] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:03 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 37/343] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:03 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 36/344] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:04 2019] GET / => generated 4434 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 39/345] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:04 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 40/346] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 37/347] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 38/348] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:04 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (2 switches on core 0)
+[pid: 23030|app: 0|req: 37/349] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:06 2019] GET / => generated 4434 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 40/350] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:06 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 41/351] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:06 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 38/352] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:06 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23031|app: 0|req: 39/353] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:06 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 38/354] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:07 2019] GET / => generated 4434 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 41/355] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:07 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 42/356] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 40/357] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23029|app: 0|req: 39/358] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:07 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 39/359] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:07 2019] GET / => generated 4434 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 42/360] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:07 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23033|app: 0|req: 43/361] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 41/362] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:07 2019] GET / => generated 4434 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 40/363] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 40/364] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:07 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 43/365] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:07 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 44/366] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:08 2019] GET / => generated 4434 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 42/367] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:08 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 41/368] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:08 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 41/369] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:08 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23032|app: 0|req: 44/370] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:08 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 45/371] 172.16.20.9 () {42 vars in 865 bytes} [Thu Jul  4 09:44:11 2019] GET / => generated 6804 bytes in 19 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 43/372] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:11 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 42/373] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:11 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 45/374] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:11 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23030|app: 0|req: 42/375] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:11 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 46/376] 172.16.20.9 () {40 vars in 834 bytes} [Thu Jul  4 09:44:24 2019] GET / => generated 6804 bytes in 21 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 44/377] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:44:24 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 43/378] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:24 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23030|app: 0|req: 43/379] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:24 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23032|app: 0|req: 46/380] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:44:24 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 47/381] 172.16.20.9 () {40 vars in 856 bytes} [Thu Jul  4 09:44:26 2019] GET /cmdb/racks/ => generated 15257 bytes in 56 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 45/382] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:26 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 44/383] 172.16.20.9 () {40 vars in 805 bytes} [Thu Jul  4 09:44:26 2019] GET /cmdb/api_idcs/ => generated 581 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 44/384] 172.16.20.9 () {40 vars in 860 bytes} [Thu Jul  4 09:44:27 2019] GET /cmdb/servers/ => generated 31133 bytes in 225 msecs (HTTP/1.1 200) 4 headers in 125 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 47/385] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:44:27 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 48/386] 172.16.20.9 () {40 vars in 809 bytes} [Thu Jul  4 09:44:27 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 46/387] 172.16.20.9 () {40 vars in 848 bytes} [Thu Jul  4 09:45:01 2019] GET /logout/ => generated 0 bytes in 27 msecs (HTTP/1.1 302) 5 headers in 214 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 45/388] 172.16.20.9 () {40 vars in 802 bytes} [Thu Jul  4 09:45:01 2019] GET /login/ => generated 3460 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/389] 172.16.20.9 () {38 vars in 686 bytes} [Thu Jul  4 09:45:01 2019] GET /static/js/wintrue.js => generated 548 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 117 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/390] 172.16.20.9 () {38 vars in 699 bytes} [Thu Jul  4 09:45:01 2019] GET /static/css/jq22.css => generated 302730 bytes in 24 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (3 switches on core 0)
+[pid: 23033|app: -1|req: -1/391] 172.16.20.9 () {42 vars in 856 bytes} [Thu Jul  4 09:45:01 2019] GET /static/fonts/glyphicons-halflings-regular.woff2 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/392] 172.16.20.9 () {38 vars in 769 bytes} [Thu Jul  4 09:45:01 2019] GET /static/images/login/owl-login-arm.png => generated 2412 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/393] 172.16.20.9 () {38 vars in 761 bytes} [Thu Jul  4 09:45:01 2019] GET /static/images/login/owl-login.png => generated 12570 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/394] 172.16.20.9 () {40 vars in 787 bytes} [Thu Jul  4 09:45:01 2019] GET /static/fonts/fontawesome-webfont.woff?v=4.2.0 => generated 81284 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (0 switches on core 0)
+admin a123456789
+[pid: 23030|app: 0|req: 45/395] 172.16.20.9 () {46 vars in 864 bytes} [Thu Jul  4 09:45:03 2019] POST /login/ => generated 13 bytes in 349 msecs (HTTP/1.1 200) 5 headers in 245 bytes (2 switches on core 0)
+[pid: 23033|app: 0|req: 49/396] 172.16.20.9 () {40 vars in 840 bytes} [Thu Jul  4 09:45:03 2019] GET / => generated 6804 bytes in 18 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: 0|req: 46/397] 172.16.20.9 () {40 vars in 864 bytes} [Thu Jul  4 09:45:04 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23031|app: 0|req: 47/398] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:45:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 48/399] 172.16.20.9 () {34 vars in 679 bytes} [Thu Jul  4 09:45:04 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/400] 172.16.20.9 () {42 vars in 870 bytes} [Thu Jul  4 09:45:04 2019] GET /static/fonts/ionicons.ttf?v=2.0.0 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/401] 172.16.20.9 () {42 vars in 872 bytes} [Thu Jul  4 09:45:04 2019] GET /static/fonts/ionicons.woff?v=2.0.0 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23030|app: 0|req: 46/402] 172.16.20.9 () {40 vars in 819 bytes} [Thu Jul  4 09:45:04 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+[pid: 23031|app: 0|req: 48/403] 172.16.20.9 () {40 vars in 856 bytes} [Thu Jul  4 09:45:18 2019] GET /cmdb/racks/ => generated 15257 bytes in 55 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23032|app: 0|req: 49/404] 172.16.20.9 () {34 vars in 677 bytes} [Thu Jul  4 09:45:18 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 50/405] 172.16.20.9 () {40 vars in 858 bytes} [Thu Jul  4 09:45:18 2019] GET /cmdb/servers/ => generated 31133 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 125 bytes (2 switches on core 0)
+Not Found: /static/js/highcharts.js.map
+[pid: 23029|app: 0|req: 47/406] 172.16.20.9 () {34 vars in 677 bytes} [Thu Jul  4 09:45:19 2019] GET /static/js/highcharts.js.map => generated 2442 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23030|app: 0|req: 47/407] 172.16.20.9 () {40 vars in 807 bytes} [Thu Jul  4 09:45:19 2019] GET /cmdb/api_racks/ => generated 8577 bytes in 33 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig/
+[pid: 23031|app: 0|req: 49/408] 172.16.20.9 () {40 vars in 865 bytes} [Thu Jul  4 09:45:23 2019] GET /sqlmng/dbconfig/ => generated 2409 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/inception_check/
+[pid: 23032|app: 0|req: 50/409] 172.16.20.9 () {40 vars in 879 bytes} [Thu Jul  4 09:45:28 2019] GET /sqlmng/inception_check/ => generated 2430 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/inception_result/
+[pid: 23033|app: 0|req: 51/410] 172.16.20.9 () {40 vars in 881 bytes} [Thu Jul  4 09:45:28 2019] GET /sqlmng/inception_result/ => generated 2433 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/inception_check/
+[pid: 23029|app: 0|req: 48/411] 172.16.20.9 () {40 vars in 879 bytes} [Thu Jul  4 09:45:29 2019] GET /sqlmng/inception_check/ => generated 2430 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig/
+[pid: 23030|app: 0|req: 48/412] 172.16.20.9 () {40 vars in 865 bytes} [Thu Jul  4 09:45:29 2019] GET /sqlmng/dbconfig/ => generated 2409 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig/
+[pid: 23031|app: 0|req: 50/413] 172.16.20.9 () {40 vars in 866 bytes} [Thu Jul  4 09:51:53 2019] GET /sqlmng/dbconfig/ => generated 2409 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 23032|app: 0|req: 51/414] 172.16.20.9 () {40 vars in 840 bytes} [Fri Jul  5 01:06:21 2019] GET / => generated 6804 bytes in 38 msecs (HTTP/1.1 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/415] 172.16.20.9 () {38 vars in 761 bytes} [Fri Jul  5 01:06:21 2019] GET /static/css/font-awesome.min.css => generated 27466 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/416] 172.16.20.9 () {38 vars in 753 bytes} [Fri Jul  5 01:06:21 2019] GET /static/css/ionicons.min.css => generated 51284 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/417] 172.16.20.9 () {38 vars in 753 bytes} [Fri Jul  5 01:06:21 2019] GET /static/css/AdminLTE.min.css => generated 90217 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 112 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/418] 172.16.20.9 () {38 vars in 755 bytes} [Fri Jul  5 01:06:21 2019] GET /static/css/skin-blue.min.css => generated 3037 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 111 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/419] 172.16.20.9 () {38 vars in 730 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/jquery.min.js => generated 94840 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/420] 172.16.20.9 () {38 vars in 736 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/bootstrap.min.js => generated 27731 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/421] 172.16.20.9 () {38 vars in 728 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/fastclick.js => generated 25965 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/422] 172.16.20.9 () {38 vars in 724 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/app.min.js => generated 9774 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 118 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/423] 172.16.20.9 () {38 vars in 750 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/jquery.sparkline.min.js => generated 43247 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/424] 172.16.20.9 () {38 vars in 762 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 33323 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/425] 172.16.20.9 () {38 vars in 771 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 144313 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 3 headers in 120 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/426] 172.16.20.9 () {38 vars in 751 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/jquery.slimscroll.min.js => generated 4724 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 118 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/427] 172.16.20.9 () {38 vars in 727 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/Chart.min.js => generated 57275 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/428] 172.16.20.9 () {38 vars in 717 bytes} [Fri Jul  5 01:06:21 2019] GET /static/js/demo.js => generated 17319 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 3 headers in 119 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/429] 172.16.20.9 () {38 vars in 755 bytes} [Fri Jul  5 01:06:21 2019] GET /static/css/bootstrap.min.css => generated 121260 bytes in 250 msecs via sendfile() (HTTP/1.1 200) 3 headers in 113 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/430] 172.16.20.9 () {38 vars in 730 bytes} [Fri Jul  5 01:06:22 2019] GET /static/js/highcharts.js => generated 233364 bytes in 15 msecs via sendfile() (HTTP/1.1 200) 3 headers in 120 bytes (3 switches on core 0)
+[pid: 23029|app: -1|req: -1/431] 172.16.20.9 () {40 vars in 844 bytes} [Fri Jul  5 01:06:22 2019] GET /static/fonts/fontawesome-webfont.woff2?v=4.5.0 => generated 64464 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 88 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig/
+[pid: 23032|app: 0|req: 52/432] 172.16.20.9 () {40 vars in 865 bytes} [Fri Jul  5 01:06:22 2019] GET /sqlmng/dbconfig/ => generated 2409 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 23030|app: 0|req: 49/433] 172.16.20.9 () {38 vars in 741 bytes} [Fri Jul  5 01:06:23 2019] GET /favicon.ico => generated 2394 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/inception_check/
+[pid: 23033|app: 0|req: 52/434] 172.16.20.9 () {40 vars in 880 bytes} [Fri Jul  5 01:06:40 2019] GET /sqlmng/inception_check/ => generated 2430 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/inception_result/
+[pid: 23031|app: 0|req: 51/435] 172.16.20.9 () {40 vars in 882 bytes} [Fri Jul  5 01:06:41 2019] GET /sqlmng/inception_result/ => generated 2433 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /sqlmng/inception_check/
+[pid: 23029|app: 0|req: 49/436] 172.16.20.9 () {40 vars in 880 bytes} [Fri Jul  5 01:06:42 2019] GET /sqlmng/inception_check/ => generated 2430 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /sqlmng/inception_result/
+[pid: 23032|app: 0|req: 53/437] 172.16.20.9 () {40 vars in 882 bytes} [Fri Jul  5 01:06:51 2019] GET /sqlmng/inception_result/ => generated 2433 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/inception_check/
+[pid: 23030|app: 0|req: 50/438] 172.16.20.9 () {40 vars in 880 bytes} [Fri Jul  5 01:06:52 2019] GET /sqlmng/inception_check/ => generated 2430 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 23033|app: 0|req: 53/439] 172.16.20.9 () {40 vars in 823 bytes} [Fri Jul  5 02:50:44 2019] GET / => generated 6804 bytes in 29 msecs (HTTP/1.1 200) 4 headers in 124 bytes (2 switches on core 0)
+[pid: 23031|app: -1|req: -1/440] 172.16.20.9 () {40 vars in 809 bytes} [Fri Jul  5 02:50:44 2019] GET /static/css/bootstrap.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/441] 172.16.20.9 () {40 vars in 815 bytes} [Fri Jul  5 02:50:44 2019] GET /static/css/font-awesome.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23032|app: -1|req: -1/442] 172.16.20.9 () {40 vars in 807 bytes} [Fri Jul  5 02:50:44 2019] GET /static/css/ionicons.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/443] 172.16.20.9 () {40 vars in 807 bytes} [Fri Jul  5 02:50:44 2019] GET /static/css/AdminLTE.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23033|app: -1|req: -1/444] 172.16.20.9 () {40 vars in 809 bytes} [Fri Jul  5 02:50:44 2019] GET /static/css/skin-blue.min.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23031|app: -1|req: -1/445] 172.16.20.9 () {40 vars in 784 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/jquery.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23029|app: -1|req: -1/446] 172.16.20.9 () {40 vars in 790 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/bootstrap.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/447] 172.16.20.9 () {40 vars in 782 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/fastclick.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23030|app: -1|req: -1/448] 172.16.20.9 () {40 vars in 778 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/app.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/449] 172.16.20.9 () {40 vars in 818 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/jquery-jvectormap-1.2.2.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/450] 172.16.20.9 () {40 vars in 826 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/jquery-jvectormap-world-mill-en.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: -1|req: -1/451] 172.16.20.9 () {40 vars in 804 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/jquery.sparkline.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/452] 172.16.20.9 () {40 vars in 782 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/Chart.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (0 switches on core 0)
+[pid: 23030|app: -1|req: -1/453] 172.16.20.9 () {40 vars in 772 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/demo.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/454] 172.16.20.9 () {40 vars in 784 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/highcharts.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/455] 172.16.20.9 () {40 vars in 806 bytes} [Fri Jul  5 02:50:44 2019] GET /static/js/jquery.slimscroll.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23033|app: 0|req: 54/456] 172.16.20.9 () {40 vars in 863 bytes} [Fri Jul  5 02:50:44 2019] GET /cmdb/dashboard/ => generated 6706 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23032|app: -1|req: -1/457] 172.16.20.9 () {42 vars in 899 bytes} [Fri Jul  5 02:50:44 2019] GET /static/fonts/fontawesome-webfont.woff2?v=4.5.0 => generated 0 bytes in 0 msecs (HTTP/1.1 304) 0 headers in 29 bytes (1 switches on core 0)
+[pid: 23031|app: -1|req: -1/458] 172.16.20.9 () {40 vars in 814 bytes} [Fri Jul  5 02:50:44 2019] GET /static/fonts/ionicons.ttf?v=2.0.0 => generated 8238 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (1 switches on core 0)
+[pid: 23029|app: -1|req: -1/459] 172.16.20.9 () {40 vars in 816 bytes} [Fri Jul  5 02:50:44 2019] GET /static/fonts/ionicons.woff?v=2.0.0 => generated 8244 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 2 headers in 87 bytes (0 switches on core 0)
+{'data_pie': [['亚森机房', 11], ['梅林机房', 0]], 'data_site': [{'id': 11, 'name': '亚森机房', 'total_site': 20, 'site': 11}, {'id': 15, 'name': '梅林机房', 'total_site': 0, 'site': 0}], 'counts': {'idcs': 2, 'racks': 2, 'servers': 11}}
+[pid: 23030|app: 0|req: 51/460] 172.16.20.9 () {40 vars in 818 bytes} [Fri Jul  5 02:50:44 2019] GET /cmdb/api_dashboard/ => generated 300 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 101 bytes (1 switches on core 0)
+Not Found: /sqlmng/inception_check/
+[pid: 23033|app: 0|req: 55/461] 172.16.20.9 () {40 vars in 879 bytes} [Fri Jul  5 02:50:49 2019] GET /sqlmng/inception_check/ => generated 2430 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig/
+[pid: 23032|app: 0|req: 54/462] 172.16.20.9 () {40 vars in 866 bytes} [Fri Jul  5 02:50:57 2019] GET /sqlmng/dbconfig/ => generated 2409 bytes in 12 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig
+[pid: 23031|app: 0|req: 52/463] 172.16.20.9 () {38 vars in 823 bytes} [Fri Jul  5 02:51:11 2019] GET /sqlmng/dbconfig => generated 2406 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig
+[pid: 23029|app: 0|req: 50/464] 172.16.20.9 () {40 vars in 854 bytes} [Fri Jul  5 02:51:40 2019] GET /sqlmng/dbconfig => generated 2406 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /sqlmng/dbconfig
+[pid: 23030|app: 0|req: 52/465] 172.16.20.9 () {40 vars in 854 bytes} [Fri Jul  5 02:51:41 2019] GET /sqlmng/dbconfig => generated 2406 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig
+[pid: 23033|app: 0|req: 56/466] 172.16.20.9 () {40 vars in 854 bytes} [Fri Jul  5 02:51:41 2019] GET /sqlmng/dbconfig => generated 2406 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig
+[pid: 23032|app: 0|req: 55/467] 172.16.20.9 () {40 vars in 854 bytes} [Fri Jul  5 02:51:41 2019] GET /sqlmng/dbconfig => generated 2406 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /sqlmng/dbconfig
+[pid: 23031|app: 0|req: 53/468] 172.16.20.9 () {40 vars in 854 bytes} [Fri Jul  5 02:51:41 2019] GET /sqlmng/dbconfig => generated 2406 bytes in 9 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)

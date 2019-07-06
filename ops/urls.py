@@ -23,5 +23,7 @@ urlpatterns = [
     path('',IndexPage.as_view()),
     re_path(r'^login/$',LoginView.as_view()),
     re_path(r'^logout/$',LogoutView.as_view()),
-    path('cmdb/',include('cmdb.urls'))
+    path('cmdb/',include('cmdb.urls')),
+    path('sqlmng/',include('sqlmng.urls'))
+
 ]
